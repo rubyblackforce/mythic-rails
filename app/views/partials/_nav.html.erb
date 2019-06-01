@@ -7,38 +7,47 @@
     </li>
   </ul>
   <ul class="nav-mid">
+    <%= link_to "Games", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", role: "button", 'data-toggle': "dropdown" %>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
     <li class="nav-item">
-      <a href="" class="nav-link">
-        Dropdown
-      </a>
     </li>
     <li class="nav-item">
-      <a href="" class="nav-link">
-        Dropdown
-      </a>
+      <%= link_to "Manager", root_path, class: "nav-link" %>
+
     </li>
     <li class="nav-item">
-      <a href="" class="nav-link">
-        Dropdown
-      </a>
+      <%= link_to "Circuit", root_path, class: "nav-link" %>
+
     </li>
-    <li class="nav-item">
-      <a href="" class="nav-link">
-        Dropdown
-      </a>
-    </li>
+    <%= link_to "Information", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", role: "button", 'data-toggle': "dropdown" %>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
   </ul>
   <ul class="nav-right">
+    <% if signed_in? %>
     <li class="nav-item">
-      <a href="" class="nav-link">
-        <% if signed_in? %>
-          <%= current_user.email %>
-          <%= button_to "Log out", sign_out_path, method: :delete %>
-        <% else %>
-          <%= link_to "Log in | Sign up", sign_in_path %>
-        <% end %>
-
-      </a>
+      <%= current_user.email %>
+      <%= button_to "Log out", sign_out_path, method: :delete, class: "nav-link" %>
     </li>
+    <% else %>
+    <li class="nav-item">
+        <%= link_to "Log in | Sign up", sign_in_path, class: "nav-link" %>
+    </li>
+    <% end %>
   </ul>
 </nav>
+
+<script type="text/javascript">
+  $document.ready(function() {
+    $('.dropdown-toggle').dropdown()
+  })
+</script>
