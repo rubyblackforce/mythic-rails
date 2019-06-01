@@ -1,0 +1,44 @@
+<nav class="nav">
+  <ul class="nav-left">
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        Mythic Gaming
+      </a>
+    </li>
+  </ul>
+  <ul class="nav-mid">
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        Dropdown
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        Dropdown
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        Dropdown
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        Dropdown
+      </a>
+    </li>
+  </ul>
+  <ul class="nav-right">
+    <li class="nav-item">
+      <a href="" class="nav-link">
+        <% if signed_in? %>
+          <%= current_user.email %>
+          <%= button_to "Log out", sign_out_path, method: :delete %>
+        <% else %>
+          <%= link_to "Log in | Sign up", sign_in_path %>
+        <% end %>
+
+      </a>
+    </li>
+  </ul>
+</nav>

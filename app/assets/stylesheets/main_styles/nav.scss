@@ -1,0 +1,44 @@
+nav.nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #333;
+  a {
+    color: #ccc;
+    padding: 15px 20px;
+    border-radius: 7px;
+    border: 1px solid #333;
+    margin: 0 8px;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      border: 1px solid #333;
+      background-color: #666;
+    }
+  }
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  text-align: left;
+}
+
+.nav-mid {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  text-align: right;
+}
