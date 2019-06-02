@@ -13,3 +13,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.owl-carousel {
+  height: 80vh;
+  width: 80vw;
+  background: #333;
+}
+
+.car-item {
+  height: 70vh;
+  width: 70vw;
+}
+
+.car-item-1 {
+  background-image: url("h3img2.jpg");
+}
+
+.car-item-2 {
+  background-image: url("h3img6.jpg");
+}
+
+.car-item-3 {
+  background-image: url("h3img1.jpg");
+}

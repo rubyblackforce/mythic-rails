@@ -1,10 +1,40 @@
 <div class="container-fluid">
-<div class="row">
-  <div class="hero">
+  <div class="row">
+    <div class="hero">
+
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="car-stage">
+              <div class="car-stage-slides">
+                  <div class="car-item car-item-1">...</div>
+                  <div class="car-item car-item-2">...</div>
+                  <div class="car-item car-item-3">...</div>
+              </div>
+          </div>
+          <div class="owl-nav">
+              <div class="owl-prev">prev</div>
+              <div class="owl-next">next</div>
+          </div>
+          <div class="owl-dots">
+              <div class="owl-dot active"><span></span></div>
+              <div class="owl-dot"><span></span></div>
+              <div class="owl-dot"><span></span></div>
+          </div>
+      </div>
+
+    </div>
   </div>
 </div>
-</div>
 
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      nav: true,
+      dots: true,
+      items: 1,
+      loop: true
+    });
+  });
+</script>
 <div class="row">
   <div class="col-3">
     Content

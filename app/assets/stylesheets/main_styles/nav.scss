@@ -54,3 +54,30 @@ form.button_to {
   margin: 0;
   padding: 0;
 }
+
+.dropdown-menu {
+}
+
+a.dropdown-item {
+  border: none !important;
+  color: #000 !important;
+  padding: 10px 15px !important;
+  &:hover {
+  }
+}
+
+.dropdown-divider {
+}
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .navbar {
+    display: block;
+  }
+  .nav {
+    display: none !important;
+  }
+}

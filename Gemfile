@@ -28,7 +28,11 @@ gem 'jbuilder', '~> 2.5'
 ## Custom
 gem 'clearance'
 gem 'administrate'
+
+## Front End
 gem 'jquery-rails'
+gem 'owlcarousel-rails'
+
 
 
 

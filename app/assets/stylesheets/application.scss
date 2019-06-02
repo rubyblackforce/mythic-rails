@@ -12,8 +12,9 @@
  *
  */
 
-// Assets: Bootstrap, Font-Awesome, SCSS, Owl.Carousel
+// Assets: Bootstrap, Font-Awesome, SCSS, Owl.Carousel, jQuery
 
+@import "bootstrap/scss/bootstrap";
 @import "main_styles/manifest";
 @import "pages";
 @import "main";
