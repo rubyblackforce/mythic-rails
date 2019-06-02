@@ -7,53 +7,122 @@
     </li>
   </ul>
   <ul class="nav-mid">
-    <%= link_to "Games", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", role: "button", 'data-toggle': "dropdown" %>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Admin</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Something else here</a>
+    <div>
+      <%= link_to "Games", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
+      <div class="dropdown-menu" aria-labelledby="drop-2">
+        <div class="row">
+          <div class="col-3">
+            <div class="dropdown-header">FPS Games</div>
+            <div class="dropdown-divider"></div>
+            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
+            <%= button_to "Support", root_path, class: "dropdown-item" %>
+          </div>
+          <div class="col-3">
+            <div class="dropdown-header">MOBA Games</div>
+            <div class="dropdown-divider"></div>
+            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
+            <%= button_to "Support", root_path, class: "dropdown-item" %>
+          </div>
+          <div class="col-3">
+            <div class="dropdown-header">HERO Games</div>
+            <div class="dropdown-divider"></div>
+            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
+            <%= button_to "Support", root_path, class: "dropdown-item" %>
+          </div>
+          <div class="col-3">
+            <div class="dropdown-header">MORE Games</div>
+            <div class="dropdown-divider"></div>
+            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
+            <%= button_to "Support", root_path, class: "dropdown-item" %>
+          </div>
+        </div>
+      </div>
     </div>
-    <li class="nav-item">
-      <%= link_to "Manager", root_path, class: "nav-link" %>
+    <div>
+      <%= link_to "Manager", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
+      <div class="dropdown-menu" aria-labelledby="drop-2">
+        <div class="dropdown-header">Regular</div>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <div class="dropdown-divder"></div>
+        <div class="dropdown-header">Late</div>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-header">Future</div>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
 
-    </li>
-    <li class="nav-item">
-      <%= link_to "Circuit", root_path, class: "nav-link" %>
-
-    </li>
-    <%= link_to "Information", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown-2", role: "button", 'data-toggle': "dropdown" %>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Something else here</a>
+      </div>
     </div>
-    <%= link_to "Staff", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown-3", role: "button", 'data-toggle': "dropdown" %>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown-3">
-      <a class="dropdown-item" href="#">Admin</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Something else here</a>
+    <div>
+      <%= link_to "Circuit", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
+      <div class="dropdown-menu" aria-labelledby="drop-2">
+        <div class="dropdown-header">Home</div>
+        <%= button_to "Circuit", root_path, class: "dropdown-item" %>
+        <div class="dropdown-divder"></div>
+        <div class="dropdown-header">Team</div>
+        <%= button_to "Cloud9", root_path, class: "dropdown-item" %>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-header">Future</div>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+
+      </div>
+    </div>
+    <div>
+      <%= link_to "Information", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
+      <div class="dropdown-menu" aria-labelledby="drop-2">
+        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+        <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+        <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
+        <%= button_to "Support", root_path, class: "dropdown-item" %>
+      </div>
     </div>
   </ul>
   <ul class="nav-right">
     <% if signed_in? %>
-    <li class="nav-item">
-      <a href="" class="nav-link">
-        <%= current_user.email %>
-      </a>
-      <%= button_to "Log out", sign_out_path, method: :delete, class: "nav-link" %>
-    </li>
+      <%= link_to current_user.email, root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
     <% else %>
-    <li class="nav-item">
-        <%= link_to "Log in | Sign up", sign_in_path, class: "nav-link" %>
-    </li>
+      <%= link_to "Log in | Sign up", sign_in_path, class: "nav-link" %>
     <% end %>
+    <div class="dropdown-menu" aria-labelledby="drop-4">
+      <div class="dropdown-header">Account</div>
+      <%= button_to "Dashboard", root_path, class: "dropdown-item" %>
+      <%= button_to "Profile", root_path, class: "dropdown-item" %>
+      <%= button_to "Payment", root_path, class: "dropdown-item" %>
+      <%= button_to "Settings", root_path, class: "dropdown-item" %>
+
+      <div class="dropdown-divider"></div>
+      <div class="dropdown-header">Staff</div>
+      <%= link_to "Admin", admin_root_path, class: "dropdown-item" %>
+      <%= link_to "Github", "https://github.com/mattgaudio/mythic-rails", class: "dropdown-item" %>
+      <%= button_to "Pay", root_path, class: "dropdown-item" %>
+      <%= button_to "Slack", root_path, class: "dropdown-item" %>
+      <%= button_to "Time Sheet", root_path, class: "dropdown-item" %>
+
+      <div class="dropdown-divider"></div>
+      <div class="dropdown-header">Session</div>
+      <%= button_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
+    </div>
   </ul>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<script>
+  $(document).ready(function(){
+    $('#drop').dropdown();
+  });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -88,9 +157,3 @@
     </form>
   </div>
 </nav>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.dropdown-toggle').dropdown()
-  })
-</script>

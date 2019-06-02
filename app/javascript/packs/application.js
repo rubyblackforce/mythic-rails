@@ -17,7 +17,6 @@ require("jquery");
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap";
-import "owl.carousel";
 
 document.addEventListener("turbolink:load", () => {
   $('[data-toggle="tooltip"]').tooltip();

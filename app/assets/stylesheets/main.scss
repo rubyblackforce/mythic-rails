@@ -12,27 +12,86 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.owl-carousel {
-  height: 80vh;
-  width: 80vw;
-  background: #333;
+.hero-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.car-item {
-  height: 70vh;
-  width: 70vw;
+.card {
+  background: none;
+  color: gray;
+  &:hover {
+    color: #fff;
+  }
 }
 
-.car-item-1 {
-  background-image: url("h3img2.jpg");
+.car-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.car-item-2 {
-  background-image: url("h3img6.jpg");
+.upcoming-tourn-box {
+  background-color: rgba(#000, 0.5);
+  color: #000;
 }
 
-.car-item-3 {
-  background-image: url("h3img1.jpg");
+#carousel {
+  border-radius: 15px;
+}
+
+.car-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#000, 0.5);
+  padding: 6vh 0;
+  height: 90%;
+  width: 90%;
+}
+.accordion {
+}
+
+.car-list {
+  background: none;
+  color: gray;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.list-group,
+.list-group-item,
+.list-group-item.active {
+  background-color: rgba(#000, 0.5);
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.form-signin input {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+}
+.link-row {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hero-2 {
+  background-color: #333;
+}
+
+.fa-link {
+  color: gray;
+  padding: 25px;
+  &:hover {
+    color: white;
+  }
 }

@@ -12,7 +12,6 @@ nav.nav {
     padding: 15px 20px;
     border-radius: 7px;
     border: 1px solid #333;
-    margin: 0 8px;
     text-decoration: none;
     &:hover {
       color: #fff;
@@ -61,8 +60,10 @@ form.button_to {
 a.dropdown-item {
   border: none !important;
   color: #000 !important;
-  padding: 10px 15px !important;
+  padding: 10px 10px !important;
+  border-radius: none;
   &:hover {
+    border-radius: none;
   }
 }
 
