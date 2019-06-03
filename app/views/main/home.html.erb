@@ -48,26 +48,48 @@
               <li data-target="#carousel data=slide-to="0" class="active"></li>
               <li data-target="#carousel  data-slide-to="1"></li>
               <li data-target="#carousel  data-slide-to="2"></li>
+              <li data-target="#carousel data=slide-to="3"></li>
+              <li data-target="#carousel  data-slide-to="4"></li>
+              <li data-target="#carousel  data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <%= image_tag "h3img2.jpg", class: "d-block w-100 slide1 slide", alt: "Second slide" %>
+                <%= image_tag "h3img2.jpg", class: "d-block w-100 slide1 slide", alt: "first slide" %>
                 <div class="carousel-caption d-none d-md-block">
                  <h5>Mythic Gaming</h5>
                  <p>Welcome To Mythic Gaming!</p>
                </div>
-
               </div>
               <div class="carousel-item">
-                <%= image_tag "h3img1.jpg", class: "d-block w-100 slide2 slide", alt: "First slide" %>
+                <%= image_tag "h3img1.jpg", class: "d-block w-100 slide2 slide", alt: "Second slide" %>
                 <div class="carousel-caption d-none d-md-block">
                  <h5>Check out the Manager</h5>
                  <p>A live preview showing you how to manage a tournament.</p>
                </div>
-
               </div>
               <div class="carousel-item">
                 <%= image_tag "h3img6.jpg", class: "d-block w-100 slide3 slide", alt: "Third slide" %>
+                <div class="carousel-caption d-none d-md-block">
+                 <h5>Mythic Gaming</h5>
+                 <p>Welcome To Mythic Gaming</p>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag "h3img5.jpg", class: "d-block w-100 slide4 slide", alt: "Fourth slide" %>
+                <div class="carousel-caption d-none d-md-block">
+                 <h5>Mythic Gaming</h5>
+                 <p>Welcome To Mythic Gaming!</p>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag "h3img7.jpg", class: "d-block w-100 slide5 slide", alt: "Fifth slide" %>
+                <div class="carousel-caption d-none d-md-block">
+                 <h5>Check out the Manager</h5>
+                 <p>A live preview showing you how to manage a tournament.</p>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag "h3img8.jpg", class: "d-block w-100 slide6 slide", alt: "Sixth slide" %>
                 <div class="carousel-caption d-none d-md-block">
                  <h5>Mythic Gaming</h5>
                  <p>Welcome To Mythic Gaming</p>
@@ -86,185 +108,163 @@
         </div>
       </div>
       <div class="col-lg-2 col-md-4 col-sm-4 slide-col">
-        <div class="row">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Mythic Gaming!</h5>
-                  <p class="card-text">
-                    Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is Mythic Gaming
-                          </button>
-                        </h5>
-                      </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mythic Gaming!</h5>
+                <p class="card-text">
+                  Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
+                </p>
+              </div>
+              <div class="card-body">
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What is Mythic Gaming
+                        </button>
+                      </h5>
+                    </div>
 
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          Mythic Gaming is a website dedicated to online Video Game Tournaments.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Basics of Mythic Gaming
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          All you have to do is create an account, and choose a game to compete in.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How to Compete
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                          It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
-                        </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        Mythic Gaming is a website dedicated to online Video Game Tournaments.
                       </div>
                     </div>
                   </div>
-                  <%= link_to "Tournament Basics", root_path, class: "card-link" %>
-                  <br>
-                  <%= link_to "Games", root_path, class: "card-link" %>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Mythic Gaming!</h5>
-                  <p class="card-text">
-                    Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is Mythic Gaming
-                          </button>
-                        </h5>
-                      </div>
-
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          Mythic Gaming is a website dedicated to online Video Game Tournaments.
-                        </div>
-                      </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Basics of Mythic Gaming
+                        </button>
+                      </h5>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Basics of Mythic Gaming
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          All you have to do is create an account, and choose a game to compete in.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How to Compete
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                          It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
-                        </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        All you have to do is create an account, and choose a game to compete in.
                       </div>
                     </div>
                   </div>
-                  <%= link_to "Tournament Basics", root_path, class: "card-link" %>
-                  <%= link_to "Tournament Basics", root_path, class: "card-link" %>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How to Compete
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
+                <br>
+                <%= link_to "Games", root_path, class: "card-link" %>
               </div>
             </div>
           </div>
-          <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
-            </li>
-          </ul> -->
+          <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mythic Gaming!</h5>
+                <p class="card-text">
+                  Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
+                </p>
+              </div>
+              <div class="card-body">
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What is Mythic Gaming
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        Mythic Gaming is a website dedicated to online Video Game Tournaments.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Basics of Mythic Gaming
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        All you have to do is create an account, and choose a game to compete in.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How to Compete
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
+                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!-- row -->
@@ -338,17 +338,19 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-3">
-    Content
-  </div>
-  <div class="col-3">
-    Content
-  </div>
-  <div class="col-3">
-    Content
-  </div>
-  <div class="col-3">
-    Content
+<div class="box">
+  <div class="row">
+    <div class="col-3">
+      Content
+    </div>
+    <div class="col-3">
+      Content
+    </div>
+    <div class="col-3">
+      Content
+    </div>
+    <div class="col-3" id="react-div">
+      <%= javascript_pack_tag "hello_world" %>
+    </div>
   </div>
 </div>

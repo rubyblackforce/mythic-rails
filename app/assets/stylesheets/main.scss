@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0;
+  flex-direction: column;
 }
 
 .upcoming-tourn-box {
@@ -101,6 +101,7 @@
   width: 50%;
   margin: 0 auto;
 }
+
 .link-row {
   font-size: 2rem;
   color: #fff;
@@ -144,6 +145,23 @@
   margin: 10px;
   color: gray;
   &:hover {
+    color: #fff;
+  }
+}
+
+.nav-pills {
+  background-color: rgba(#000, 0.5);
+}
+
+.nav-pill .nav-item {
+}
+
+.nav-pills .nav-link,
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: rgba(#000, 0.5) !important;
+  &:hover {
+    background-color: gray;
     color: #fff;
   }
 }
