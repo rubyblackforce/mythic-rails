@@ -74,11 +74,11 @@
     <div>
       <%= link_to "Information", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
       <div class="dropdown-menu" aria-labelledby="drop-2">
-        <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
-        <%= button_to "Statistics", root_path, class: "dropdown-item" %>
-        <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-        <%= button_to "Support", root_path, class: "dropdown-item" %>
-        <%= button_to "FAQ", root_path, class: "dropdown-item" %>
+        <%= button_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
+        <%= button_to "Statistics", info_statistics_path, method: :get, class: "dropdown-item" %>
+        <%= button_to "Reddit", "https://www.reddit.com/r/mythicgaming", method: :get, class: "dropdown-item", target: '_blank' %>
+        <%= button_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
+        <%= button_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
         <div class="dropdown-divider"></div>
         <div class="dropdown-header">More</div>
         <%= button_to "Mythic Studios", root_path, class: "dropdown-item" %>

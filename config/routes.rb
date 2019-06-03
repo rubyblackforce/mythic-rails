@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, controller: "clearance/sessions", only: [:create]
 
@@ -15,4 +16,8 @@ Rails.application.routes.draw do
   resources :pages
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root "main#home"
+  get 'info/tournament_basics'
+  get 'info/statistics'
+  get 'info/support'
+  get 'info/faq'
 end
