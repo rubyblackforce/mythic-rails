@@ -22,7 +22,7 @@
 }
 
 .card {
-  background-color: rgba(#2e5cb8, 0.5);
+  background-color: rgba(#2e5cb8, 0.25);
   color: #fff;
   width: 100%;
 }
@@ -58,6 +58,12 @@
   border-radius: 15px;
 }
 
+.carousel-caption {
+  background-color: rgba(#000, 0.5);
+  color: #fff;
+  padding: 5vh 5vw;
+}
+
 .car-box {
   display: flex;
   justify-content: center;
@@ -84,7 +90,7 @@
 .list-group-item,
 .list-group-item.active {
   background-color: rgba(#000, 0.5);
-  color: #fff;
+  color: gray;
   &:hover {
     color: #fff;
   }
@@ -128,12 +134,22 @@
 }
 
 #accordion .card {
-  background-color: rgba(#000, 0.75);
+  background-color: rgba(#000, 0.5);
 }
 
 .card-link {
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: rgba(#000, 0.5);
+  background-color: rgba(#000, 0.25);
   margin: 10px;
+  color: gray;
+  &:hover {
+    color: #fff;
+  }
+}
+
+// LOG IN && Social Media Links
+
+i {
+  color: #fff;
 }

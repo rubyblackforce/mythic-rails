@@ -7,9 +7,13 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Pick your Region.</h5>
-              <p class="card-text">
-                America, Europe, Asia
-              </p>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">America</option>
+                  <option value="">Europe</option>
+                  <option value="">Asia</option>
+                </select>
+              </div>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Regular Tournament Start Time: </li>
@@ -39,26 +43,6 @@
       </div>
       <div class="col-lg-8 col-md-8 col-sm-8 car-col">
         <div class="car-box">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
-            </li>
-          </ul>
           <div id="carousel" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="#carousel data=slide-to="0" class="active"></li>
@@ -70,15 +54,15 @@
                 <%= image_tag "h3img2.jpg", class: "d-block w-100 slide1 slide", alt: "Second slide" %>
                 <div class="carousel-caption d-none d-md-block">
                  <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming</p>
+                 <p>Welcome To Mythic Gaming!</p>
                </div>
 
               </div>
               <div class="carousel-item">
                 <%= image_tag "h3img1.jpg", class: "d-block w-100 slide2 slide", alt: "First slide" %>
                 <div class="carousel-caption d-none d-md-block">
-                 <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming</p>
+                 <h5>Check out the Manager</h5>
+                 <p>A live preview showing you how to manage a tournament.</p>
                </div>
 
               </div>
@@ -103,6 +87,26 @@
       </div>
       <div class="col-lg-2 col-md-4 col-sm-4 slide-col">
         <div class="row">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
+            </li>
+          </ul>
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="card">
@@ -313,24 +317,19 @@
       <div class="links">
         <div class="row">
           <div class="col-4 fa-link">
-            <i class="fas fa-reddit"></i>
-            <i class="fas fa-reddit"></i>
-
-<i class="fab fa-reddit"></i>
-
+            Reddit
           </div>
           <div class="col-4 fa-link">Facebook</div>
           <div class="col-4 fa-link">Twitter</div>
-          <div class="col-4 fa-link">
-            <i class="fas fa-github"></i>
-          </div>
           <div class="col-4 fa-link">Youtube</div>
           <div class="col-4 fa-link">Instagram</div>
           <div class="col-4 fa-link">Discord</div>
           <div class="col-4 fa-link">
-            <i class="fas fa-check"></i>
+            Linkedin
           </div>
-          <div class="col-4 fa-link"></div>
+          <div class="col-4 fa-link">
+            Github
+          </div>
         </div>
 
       </div>
