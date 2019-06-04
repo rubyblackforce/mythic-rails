@@ -1,6 +1,7 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 // Hero
 .hero {
   background-image: url("background3.jpg");
@@ -15,12 +16,29 @@
   background-color: rgba(#000, 0.4);
 }
 
+// left hero
 .left-hero-col {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.card {
+  height: 60vh;
+  background-color: rgba(#000c, 0.5);
+  width: 90% !important;
+  color: #fff;
+}
+
+.accordion .card {
+  height: auto;
+}
+
+.list-group {
+  background-color: rgba(#0066cc, 0.5);
+}
+
+// mid hero
 .mid-hero-col {
   height: 90vh;
   display: flex;
@@ -48,6 +66,12 @@
   height: 50vh;
 }
 
+.carousel-caption {
+  background-color: rgba(#000, 0.5);
+  padding: 2.5vh 4vw;
+}
+
+// right hero
 .right-hero-col {
   display: flex;
   justify-content: center;
