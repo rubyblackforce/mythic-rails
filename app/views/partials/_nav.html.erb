@@ -12,35 +12,30 @@
           <div class="col-3">
             <div class="dropdown-header">FPS Games</div>
             <div class="dropdown-divider"></div>
-            <% @games.each do |game| %>
-              <% if (game.game_type == "fps") %>
+            <% @games.fps.each do |game| %>
                 <%= link_to game.short_title, root_path, class: "dropdown-item" %>
-              <% end %>
             <% end %>
           </div>
           <div class="col-3">
             <div class="dropdown-header">MOBA Games</div>
             <div class="dropdown-divider"></div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
-            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
-            <%= button_to "Support", root_path, class: "dropdown-item" %>
+            <% @games.moba.each do |game| %>
+                <%= link_to game.short_title, root_path, class: "dropdown-item" %>
+            <% end %>
           </div>
           <div class="col-3">
             <div class="dropdown-header">HERO Games</div>
             <div class="dropdown-divider"></div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
-            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
-            <%= button_to "Support", root_path, class: "dropdown-item" %>
+            <% @games.hero.each do |game| %>
+                <%= link_to game.short_title, root_path, class: "dropdown-item" %>
+            <% end %>
           </div>
           <div class="col-3">
             <div class="dropdown-header">MORE Games</div>
             <div class="dropdown-divider"></div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-            <%= button_to "FAQ", root_path, class: "dropdown-item" %>
-            <%= button_to "Tournament Basics", root_path, class: "dropdown-item" %>
-            <%= button_to "Support", root_path, class: "dropdown-item" %>
+            <% @games.more.each do |game| %>
+                <%= link_to game.short_title, root_path, class: "dropdown-item" %>
+            <% end %>
           </div>
         </div>
       </div>
