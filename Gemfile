@@ -31,7 +31,7 @@ gem 'administrate'
 
 ## Front End
 gem 'jquery-rails'
-gem 'owlcarousel-rails'
+gem 'font-awesome-rails'
 
 
 

@@ -1,7 +1,7 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+// Hero
 .hero {
   background-image: url("background3.jpg");
   min-height: 90vh;
@@ -9,165 +9,49 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.hero .row {
+  background-color: rgba(#000, 0.4);
+}
+
+.left-hero-col {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.hero-row {
+.mid-hero-col {
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card {
-  background-color: rgba(#2e5cb8, 0.25);
-  color: #fff;
-  width: 100%;
+.carousel-wrapper {
+  min-height: 30vh;
+  min-width: 100%;
+  padding: 5vh 0vw;
+  background-color: rgba(#000, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.car-col {
+#carousel-hero {
+}
+
+.carousel-item {
+}
+
+.carousel-item img {
+  height: 50vh;
+}
+
+.right-hero-col {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0;
-}
-
-.card-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0;
-}
-
-.slide-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.upcoming-tourn-box {
-  width: 90%;
-  background-color: rgba(#000, 0.5);
-  color: #000;
-}
-
-#carousel {
-  border-radius: 15px;
-}
-
-.carousel-caption {
-  background-color: rgba(#000, 0.5);
-  color: #fff;
-  padding: 5vh 5vw;
-}
-
-.car-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(#000, 0.5);
-  padding: 6vh 0;
-  height: 90%;
-  width: 90%;
-}
-.accordion {
-}
-
-.car-list {
-  background: none;
-  color: gray;
-  width: 90%;
-  &:hover {
-    color: #fff;
-  }
-}
-
-.list-group,
-.list-group-item,
-.list-group-item.active {
-  background-color: rgba(#000, 0.5);
-  color: gray;
-  &:hover {
-    color: #fff;
-  }
-}
-
-.form-signin input {
-  height: 50%;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.link-row {
-  font-size: 2rem;
-  color: #fff;
-}
-
-.hero-2 {
-  background-color: #333;
-}
-
-.fa-link {
-  color: gray;
-  padding: 25px;
-  &:hover {
-    color: white;
-  }
-}
-
-.tab-content {
-  color: #fff;
-}
-
-.slide-col .nav-pills {
-  background-color: rgba(#000, 0.5);
-}
-
-.slide-col .nav-item {
-}
-
-.slide-col .nav-link {
-  color: #fff;
-}
-
-#accordion .card {
-  background-color: rgba(#000, 0.5);
-}
-
-.card-link {
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: rgba(#000, 0.25);
-  margin: 10px;
-  color: gray;
-  &:hover {
-    color: #fff;
-  }
-}
-
-.nav-pills {
-  background-color: rgba(#000, 0.5);
-}
-
-.nav-pill .nav-item {
-}
-
-.nav-pills .nav-link,
-.nav-pills .nav-link.active {
-  color: #fff;
-  background-color: rgba(#000, 0.5) !important;
-  &:hover {
-    background-color: gray;
-    color: #fff;
-  }
 }
 
 // LOG IN && Social Media Links
-
-i {
-  color: #fff;
-}

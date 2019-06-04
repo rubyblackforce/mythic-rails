@@ -1,356 +1,93 @@
-<div class="container-fluid">
-  <div class="hero">
-
-    <div class="row hero-row">
-      <div class="col-lg-2 col-md-6 col-sm-6 card-col">
-        <div class="upcoming-tourn-box">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Pick your Region.</h5>
-              <div class="form-group">
-                <select class="form-control">
-                  <option value="">America</option>
-                  <option value="">Europe</option>
-                  <option value="">Asia</option>
-                </select>
+<div class="container-fluid hero">
+  <div class="row">
+    <div class="col-3 left-hero-col">
+    </div>
+    <div class="col-6 mid-hero-col">
+      <div class="carousel-wrapper">
+        <div id="carousel-hero" class="carousel slide"">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-hero" data-slide-to="1"></li>
+            <li data-target="#carousel-hero" data-slide-to="2"></li>
+            <li data-target="#carousel-hero" data-slide-to="3"></li>
+            <li data-target="#carousel-hero" data-slide-to="4"></li>
+            <li data-target="#carousel-hero" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag "h3img2.jpg", class: "d-block w-100", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Regular Tournament Start Time: </li>
-              <li class="list-group-item">Check in Time: </li>
-              <li class="list-group-item">Late Tournament Start Time: </li>
-              <li class="list-group-item">Late Check in Time: </li>
-
-            </ul>
-            <div class="card-body">
+            <div class="carousel-item">
+              <%= image_tag "h3img1.jpg", class: "d-block w-100", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "h3img3.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "h3img4.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "h3img5.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "h3img6.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Your Tournaments Today: </h5>
-              <p class="card-text">Halo:MCC Regular Time</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <%= link_to "Manager", root_path, class: "list-group-link" %>
-              </li>
-            </ul>
-            <div class="card-body">
-            </div>
-          </div>
-
+          <a class="carousel-control-prev" href="#carousel-hero" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-hero" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <div class="col-lg-8 col-md-8 col-sm-8 car-col">
-        <div class="car-box">
-          <div id="carousel" class="carousel slide">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel data=slide-to="0" class="active"></li>
-              <li data-target="#carousel  data-slide-to="1"></li>
-              <li data-target="#carousel  data-slide-to="2"></li>
-              <li data-target="#carousel data=slide-to="3"></li>
-              <li data-target="#carousel  data-slide-to="4"></li>
-              <li data-target="#carousel  data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <%= image_tag "h3img2.jpg", class: "d-block w-100 slide1 slide", alt: "first slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming!</p>
-               </div>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag "h3img1.jpg", class: "d-block w-100 slide2 slide", alt: "Second slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Check out the Manager</h5>
-                 <p>A live preview showing you how to manage a tournament.</p>
-               </div>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag "h3img6.jpg", class: "d-block w-100 slide3 slide", alt: "Third slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming</p>
-               </div>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag "h3img5.jpg", class: "d-block w-100 slide4 slide", alt: "Fourth slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming!</p>
-               </div>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag "h3img7.jpg", class: "d-block w-100 slide5 slide", alt: "Fifth slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Check out the Manager</h5>
-                 <p>A live preview showing you how to manage a tournament.</p>
-               </div>
-              </div>
-              <div class="carousel-item">
-                <%= image_tag "h3img8.jpg", class: "d-block w-100 slide6 slide", alt: "Sixth slide" %>
-                <div class="carousel-caption d-none d-md-block">
-                 <h5>Mythic Gaming</h5>
-                 <p>Welcome To Mythic Gaming</p>
-               </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 slide-col">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-slide1-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Slide 4</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-slide2-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Slide 5</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-slide3-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Slide 6</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mythic Gaming!</h5>
-                <p class="card-text">
-                  Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
-                </p>
-              </div>
-              <div class="card-body">
-                <div id="accordion">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          What is Mythic Gaming
-                        </button>
-                      </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        Mythic Gaming is a website dedicated to online Video Game Tournaments.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Basics of Mythic Gaming
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        All you have to do is create an account, and choose a game to compete in.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          How to Compete
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
-                <br>
-                <%= link_to "Games", root_path, class: "card-link" %>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mythic Gaming!</h5>
-                <p class="card-text">
-                  Welcome to Mythic Gaming. Home of Competitive Online Gaming Tournaments.
-                </p>
-              </div>
-              <div class="card-body">
-                <div id="accordion">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          What is Mythic Gaming
-                        </button>
-                      </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        Mythic Gaming is a website dedicated to online Video Game Tournaments.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Basics of Mythic Gaming
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        All you have to do is create an account, and choose a game to compete in.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          How to Compete
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        It is very easy to compete, if interested here are the <%= link_to "tournament basics", root_path %>.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
-                <%= link_to "Tournament Basics", root_path, class: "card-link" %>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- row -->
-  </div><!-- hero -->
+    </div>
+    <div class="col-3 right-hero-col"></div>
+  </div>
 </div>
 
 <script>
   $(document).ready(function() {
-    $('#carousel').carousel({
-      pause: true,
+    $('#carousel-hero').carousel({
       interval: false,
-      ride: false
+      ride: false,
+      wrap: false
+    });
+    $('.carousel-wrapper').carousel({
+      interval: false,
+      ride: false,
+      wrap: false
+    });
+    $('.carousel').carousel({
+      interval: false,
+      ride: false,
+      wrap: false
     });
   })
 </script>
-
-<div class="container-fluid hero-2 box">
-  <div class="row">
-    <div class="col-6">
-      <form class="form-signin">
-
-        <div class="text-center mb-4">
-          <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-          <h1 class="h3 mb-3 font-weight-normal">Log in | Sign up</h1>
-          <p></p>
-        </div>
-
-        <div class="form-label-group">
-          <label for="inputEmail">Email address</label>
-
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
-        </div>
-
-        <div class="form-label-group">
-          <label for="inputPassword">Password</label>
-
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password">
-        </div>
-
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
-      </form>
-    </div>
-    <div class="col-6">
-      <div class="links">
-        <div class="row">
-          <div class="col-4 fa-link">
-            Reddit
-          </div>
-          <div class="col-4 fa-link">Facebook</div>
-          <div class="col-4 fa-link">Twitter</div>
-          <div class="col-4 fa-link">Youtube</div>
-          <div class="col-4 fa-link">Instagram</div>
-          <div class="col-4 fa-link">Discord</div>
-          <div class="col-4 fa-link">
-            Linkedin
-          </div>
-          <div class="col-4 fa-link">
-            Github
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="box">
-  <div class="row">
-    <div class="col-3">
-      Content
-    </div>
-    <div class="col-3">
-      Content
-    </div>
-    <div class="col-3">
-      Content
-    </div>
-    <div class="col-3" id="react-div">
-      <%= javascript_pack_tag "hello_world" %>
-    </div>
-  </div>
-</div>
