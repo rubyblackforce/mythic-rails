@@ -1,6 +1,6 @@
 <div class="container-fluid hero">
   <div class="row">
-    <div class="col-3 left-hero-col">
+    <div class="col-lg-3 col-md-6 left-hero-col">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Pick your Region:</h5>
@@ -9,23 +9,18 @@
             <option>Europe</option>
             <option>Asia</option>
           </select>
-          <p>Regular Start Time: 7:00 pm</p>
-          <p>Check in Time: 6:00 pm</p>
-          <p>Late Start Time: 10:30 pm</p>
-          <p>Late Check in Time: 9:30 pm</p>
+          <ul class="list-group list-group-flush" id="list-group-hero">
+            <li class="list-group-item">Regular Start Time: </li>
+            <li class="list-group-item">Regular Check-in Time:</li>
+            <li class="list-group-item">Late Start Time:</li>
+            <li class="list-group-item">Late Check-in Time:</li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item list-group-item-dark">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
     </div>
-    <div class="col-6 mid-hero-col">
+    <div class="col-lg-6 col-md-6 mid-hero-col">
       <div class="carousel-wrapper">
         <div id="carousel-hero" class="carousel slide"">
           <ol class="carousel-indicators">
@@ -91,7 +86,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3 right-hero-col"></div>
+    <div class="col-lg-3 col-md-6 right-hero-col">
+    </div>
   </div>
 </div>
 
@@ -112,5 +108,11 @@
       ride: false,
       wrap: false
     });
+  })
+</script>
+
+<script>
+  $(function () {
+    $('#myList a:last-child').tab('show')
   })
 </script>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
   namespace :admin do
       resources :users
+      resources :games
 
       root to: "users#index"
     end
