@@ -13,7 +13,7 @@
 }
 
 .hero .row {
-  background-color: rgba(#000, 0.2);
+  background-color: rgba(#000, 0.15);
 }
 
 // left hero
@@ -32,8 +32,8 @@ select.form-control {
 }
 
 .card {
-  height: 60vh;
-  background-color: rgba(#000c, 0.5);
+  height: 60vh !important;
+  background-color: rgba(#000, 0.5);
   width: 90% !important;
   color: #fff;
 }
@@ -41,15 +41,35 @@ select.form-control {
 #list-group-hero {
 }
 #list-group-hero .list-group-item {
-  background-color: rgba(#0066cc, 0.25);
+  background-color: rgba(#0066cc, 0.5);
   margin: 1vh 1vw;
   border-radius: 5px;
   color: #fff;
 }
 
-.accordion .card {
-  height: auto;
+.accordion-left-hero {
+  .card {
+    height: auto !important;
+    background-color: none;
+  }
+  .card-header {
+    padding: 0;
+    border-bottom: none;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .accordion-header {
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: bold;
+  }
+  .btn {
+    padding: 15px;
+    margin: 0px;
+  }
 }
+
 // mid hero
 .mid-hero-col {
   height: 90vh;
