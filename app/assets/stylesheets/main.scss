@@ -45,16 +45,19 @@ select.form-control {
 }
 #list-group-hero {
 }
-#list-group-hero .list-group-item {
+#list-group-hero li.list-group-item {
   background-color: rgba(#0066cc, 0.5);
   margin: 1vh 1vw;
   border-radius: 5px;
   color: #fff;
+  padding: none;
   a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
     &:hover {
       text-decoration: none;
+      background-color: transparent;
     }
   }
 }
@@ -75,6 +78,7 @@ select.form-control {
   .btn {
     padding: 15px;
     margin: 0px;
+    background-color: transparent !important;
   }
 }
 
@@ -94,6 +98,12 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.carousel-indicators {
+  li {
+    height: 0.5vh;
+  }
 }
 
 #carousel-hero {
@@ -131,6 +141,23 @@ select.form-control {
 }
 
 .right-hero-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  button {
+    height: 100%;
+    width: 100%;
+  }
+  .slider-left {
+    width: 30%;
+  }
+  .slider-mid {
+    width: 40%;
+  }
+  .slider-right {
+    width: 30%;
+  }
 }
 
 .right-hero-header {

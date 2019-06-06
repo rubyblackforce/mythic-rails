@@ -16,6 +16,10 @@ require("jquery");
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+// jQuery
+// Particles.js https://github.com/VincentGarreau/particles.js/
+//
+
 import "bootstrap";
 
 document.addEventListener("turbolink:load", () => {

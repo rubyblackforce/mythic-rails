@@ -93,8 +93,9 @@
                   <div class="card-body">
                     <ul class="list-group list-group-flush" id="list-group-hero">
                       <li class="list-group-item">
-                        <%= link_to(info_tournament_basics_path) do %>
+                        <%= link_to(info_tournament_basics_path, class: "dropdown-item") do %>
                           Tournament: Halo: MCC | 4v4
+                          <br>
                           Start: <%= Time.now.strftime("%d")%>,
                         <% end %>
                       </li>
@@ -113,7 +114,13 @@
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                   <div class="card-body">
                     <ul class="list-group list-group-flush" id="list-group-hero">
-                      <li class="list-group-item"> Future Tournament </li>
+                      <li class="list-group-item">
+                        <%= link_to(info_tournament_basics_path, class: "dropdown-item") do %>
+                          Tournament: Halo: MCC | 4v4
+                          <br>
+                          Start: <%= Time.now.strftime("%d")%>,
+                        <% end %>
+                      </li>
                       <li class="list-group-item">
                         <!-- Default dropup button -->
                         <div class="btn-group dropup">
@@ -121,7 +128,7 @@
                             View More
                           </button>
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Future Tournament</a>
+
                             <a class="dropdown-item" href="#">Future Tournament</a>
                             <a class="dropdown-item" href="#">Future Tournament</a>
                           </div>
@@ -208,24 +215,7 @@
       <div class="right-hero">
         <div class="right-hero-slider"></div>
         <div class="right-hero-header"></div>
-        <div class="right-hero-body">
-          <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mythic Gaming</h5>
-              <p class="card-text">Welcome to Mythic Gaming!</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Join a Tournament</li>
-              <li class="list-group-item">View all Games</li>
-              <li class="list-group-item">View the Tournament Manager</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
+        <div class="right-hero-body"></div>
         <div class="right-hero-links"></div>
       </div>
     </div>
