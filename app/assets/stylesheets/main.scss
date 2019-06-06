@@ -31,13 +31,19 @@ select.form-control {
   }
 }
 
-.card {
+.card-1 {
   height: 60vh !important;
-  background-color: rgba(#000, 0.5);
+  background-color: none;
   width: 90% !important;
+  background-color: rgba(#000, 0.5);
   color: #fff;
+  border-radius: 5px;
 }
 
+.card {
+  background-color: transparent !important;
+  height: auto !important;
+}
 #list-group-hero {
 }
 #list-group-hero .list-group-item {
@@ -48,10 +54,6 @@ select.form-control {
 }
 
 .accordion-left-hero {
-  .card {
-    height: auto !important;
-    background-color: none;
-  }
   .card-header {
     padding: 0;
     border-bottom: none;
