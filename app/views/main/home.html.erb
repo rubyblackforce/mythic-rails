@@ -67,7 +67,7 @@
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Regular Tournaments
+                      Regular Tournament
                     </button>
                   </h2>
                 </div>
@@ -85,14 +85,19 @@
                 <div class="card-header" id="headingFour">
                   <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Late Tournaments
+                      Late Tournament
                     </button>
                   </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                   <div class="card-body">
                     <ul class="list-group list-group-flush" id="list-group-hero">
-                      <li class="list-group-item"> Late Tournament </li>
+                      <li class="list-group-item">
+                        <%= link_to(info_tournament_basics_path) do %>
+                          Tournament: Halo: MCC | 4v4
+                          Start: <%= Time.now.strftime("%d")%>,
+                        <% end %>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -109,6 +114,19 @@
                   <div class="card-body">
                     <ul class="list-group list-group-flush" id="list-group-hero">
                       <li class="list-group-item"> Future Tournament </li>
+                      <li class="list-group-item">
+                        <!-- Default dropup button -->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            View More
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Future Tournament</a>
+                            <a class="dropdown-item" href="#">Future Tournament</a>
+                            <a class="dropdown-item" href="#">Future Tournament</a>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
