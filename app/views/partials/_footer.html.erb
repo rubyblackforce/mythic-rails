@@ -1,20 +1,143 @@
 <div class="container-fluid footer-section">
 	<div class="row">
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
+		<div class="col-3">
+			<div class="footer-header">
+				FPS Games:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<% @games.fps.each do |x| %>
+						<li><%= link_to "#{x.long_title}", root_path %></li>
+					<% end %>
+				</ul>
+			</div>
+
+
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				MOBA Games:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<% @games.moba.each do |x| %>
+						<li><%= link_to "#{x.long_title}", root_path %></li>
+					<% end %>
+				</ul>
+			</div>
+
+
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				HERO Games:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<% @games.hero.each do |x| %>
+						<li><%= link_to "#{x.long_title}", root_path %></li>
+					<% end %>
+				</ul>
+			</div>
+
+
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				MORE Games:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<% @games.more.each do |x| %>
+						<li><%= link_to "#{x.long_title}", root_path %></li>
+					<% end %>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3">
+			<div class="footer-header">
+				Profile:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<li><%= link_to "Dashboard", root_path %></li>
+					<li><%= link_to "Profile", root_path %></li>
+					<li><%= link_to "Account", root_path %></li>
+					<li><%= link_to "Settings", root_path %></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				Awards and Prestige:
+			</div>
+			<div class="footer-body"></div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				Statistics:
+			</div>
+			<div class="footer-body"></div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				About Us:
+			</div>
+			<div class="footer-body"></div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
+		<div class="col-3">
+			<div class="footer-header">
+				Site Navigation:
+			</div>
+			<div class="footer-body"></div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				Legal:
+			</div>
+			<div class="footer-body"></div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				Information:
+			</div>
+			<div class="footer-body">
+				<ul>
+					<li><%= link_to "Tournament Basics", root_path %></li>
+					<li><%= link_to "FAQ", root_path %></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="footer-header">
+				Support:
+			</div>
+			<div class="footer-body"></div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
-		<div class="col-3"></div>
+		<div class="col-6">
+			<div class="footer-header">
+				Powered By:
+			</div>
+			<div class="footer-body">
+				<%= fa_icon "fa-github" %>
+				<i class="fa fa-github"></i>
+				<i class="fas fas-github"></i>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="footer-header">
+				Social Media:
+			</div>
+			<div class="footer-body"></div>
+		</div>
 	</div>
 </div>
