@@ -33,7 +33,6 @@ select.form-control {
 
 .card-1 {
   height: 60vh !important;
-  background-color: none;
   width: 90% !important;
   background-color: rgba(#000, 0.5);
   color: #fff;
@@ -110,6 +109,37 @@ select.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.right-hero {
+  height: 60vh !important;
+  width: 90% !important;
+  background-color: rgba(#000, 0.5);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.right-hero-slider {
+}
+
+.right-hero-header {
+}
+
+.right-hero-body {
+}
+
+.right-hero-links {
+}
+
+.right-hero .card {
+  background-color: transparent !important;
+}
+
+.right-hero .list-group {
+  background-color: transparent !important;
+  .list-group-item {
+    background-color: transparent !important;
+  }
 }
 
 // LOG IN && Social Media Links
