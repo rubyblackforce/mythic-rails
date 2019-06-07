@@ -1,6 +1,8 @@
-<nav class="nav navbar navbar-expand-md ">
+<nav class="nav navbar navbar-expand-lg ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon">
+      <i class="fa fa-navicon"></i>
+    </span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav-left">
@@ -9,7 +11,7 @@
       </li>
     </ul>
     <ul class="nav-mid">
-      <div>
+      <div class="btn-group dropdown">
         <%= link_to "Games", root_path, class: "nav-link", id: "drop-2", role: "button", 'data-toggle': "dropdown" %>
         <div class="dropdown-menu" aria-labelledby="drop-2">
           <div class="row">
@@ -44,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="btn-group dropdown">
         <%= link_to "Manager", root_path, class: "nav-link", id: "drop-3", role: "button", 'data-toggle': "dropdown" %>
         <div class="dropdown-menu" aria-labelledby="drop-3">
           <div class="dropdown-header">Regular</div>
@@ -59,7 +61,7 @@
           <%= button_to "Reddit", root_path, class: "dropdown-item" %>
         </div>
       </div>
-      <div>
+      <div class="btn-group dropdown">
         <%= link_to "Circuit", root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
         <div class="dropdown-menu" aria-labelledby="drop-4">
           <div class="dropdown-header">Home</div>
@@ -67,10 +69,9 @@
           <div class="dropdown-divder"></div>
           <div class="dropdown-header">Team</div>
           <%= button_to "Cloud9", root_path, class: "dropdown-item" %>
-
         </div>
       </div>
-      <div>
+      <div class="btn-group dropdown">
         <%= link_to "Information", root_path, class: "nav-link", id: "drop-5", role: "button", 'data-toggle': "dropdown" %>
         <div class="dropdown-menu" aria-labelledby="drop-5">
           <%= button_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
@@ -90,7 +91,7 @@
     </ul>
     <ul class="nav-right">
       <% if signed_in? %>
-        <div>
+        <div class="btn-group dropdown">
           <%= link_to "Comms", root_path, class: "nav-link", id: "drop-comms", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-comms">
             <div class="dropdown-header">Communications</div>
@@ -98,7 +99,7 @@
             <%= button_to "History", root_path, class: "dropdown-item" %>
           </div>
         </div>
-        <div>
+        <div class="btn-group dropdown">
           <%= link_to current_user.email, root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-4">
             <div class="dropdown-header">Account</div>

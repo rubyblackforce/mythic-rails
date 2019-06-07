@@ -90,27 +90,26 @@ form.button_to {
 
 // Navbar Collapse
 
-// .navbar-toggler-icon {
-//   color: #fff;
-//   background-color: #fff;
-// }
-//
-// @media (min-width: 768px) {
-//   .navbar-collapse {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//   }
-//
-//   nav.nav {
-//     height: auto;
-//   }
-//   .nav-left,
-//   .nav-mid,
-//   .nav-right {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     width: auto;
-//   }
-// }
+.navbar-toggler-icon i {
+  color: white;
+}
+
+@media (min-width: 768px !important) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav.nav {
+    height: auto;
+  }
+  .nav-left,
+  .nav-mid,
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+}
