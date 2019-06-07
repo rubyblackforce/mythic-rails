@@ -51,40 +51,40 @@
           <%= link_to "Manager", root_path, class: "nav-link", id: "drop-3", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-3">
             <div class="dropdown-header">Regular</div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= link_to "Reddit", root_path, class: "dropdown-item" %>
             <div class="dropdown-divder"></div>
             <div class="dropdown-header">Late</div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= link_to "Reddit", root_path, class: "dropdown-item" %>
             <div class="dropdown-divider"></div>
             <div class="dropdown-header">Future</div>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
-            <%= button_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= link_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= link_to "Reddit", root_path, class: "dropdown-item" %>
+            <%= link_to "Reddit", root_path, class: "dropdown-item" %>
           </div>
         </div>
         <div class="btn-group dropdown">
           <%= link_to "Circuit", root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-4">
             <div class="dropdown-header">Home</div>
-            <%= button_to "Circuit", root_path, class: "dropdown-item" %>
+            <%= link_to "Circuit", root_path, class: "dropdown-item" %>
             <div class="dropdown-divder"></div>
             <div class="dropdown-header">Team</div>
-            <%= button_to "Cloud9", root_path, class: "dropdown-item" %>
+            <%= link_to "Cloud9", root_path, class: "dropdown-item" %>
           </div>
         </div>
         <div class="btn-group dropdown">
           <%= link_to "Information", root_path, class: "nav-link", id: "drop-5", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-5">
-            <%= button_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
-            <%= button_to "Statistics", info_statistics_path, method: :get, class: "dropdown-item" %>
-            <%= button_to "Reddit", "https://www.reddit.com/r/mythicgaming", method: :get, class: "dropdown-item", target: '_blank' %>
-            <%= button_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
-            <%= button_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
+            <%= link_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
+            <%= link_to "Statistics", info_statistics_path, method: :get, class: "dropdown-item" %>
+            <%= link_to "Reddit", "https://www.reddit.com/r/mythicgaming", method: :get, class: "dropdown-item", target: '_blank' %>
+            <%= link_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
+            <%= link_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
             <div class="dropdown-divider"></div>
             <div class="dropdown-header">More</div>
-            <%= button_to "Mythic Studios", root_path, class: "dropdown-item" %>
-            <%= button_to "Mythic Console", root_path, class: "dropdown-item" %>
-            <%= button_to "Mythic Game", root_path, class: "dropdown-item" %>
+            <%= link_to "Mythic Studios", root_path, class: "dropdown-item" %>
+            <%= link_to "Mythic Console", root_path, class: "dropdown-item" %>
+            <%= link_to "Mythic Game", root_path, class: "dropdown-item" %>
 
 
           </div>
@@ -96,30 +96,30 @@
             <%= link_to "Comms", root_path, class: "nav-link", id: "drop-comms", role: "button", 'data-toggle': "dropdown" %>
             <div class="dropdown-menu" aria-labelledby="drop-comms">
               <div class="dropdown-header">Communications</div>
-              <%= button_to "Discord", root_path, class: "dropdown-item" %>
-              <%= button_to "History", root_path, class: "dropdown-item" %>
+              <%= link_to "Discord", root_path, class: "dropdown-item" %>
+              <%= link_to "History", root_path, class: "dropdown-item" %>
             </div>
           </div>
           <div class="btn-group dropdown">
             <%= link_to current_user.email, root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
             <div class="dropdown-menu" aria-labelledby="drop-4">
               <div class="dropdown-header">Account</div>
-              <%= button_to "Dashboard", root_path, class: "dropdown-item" %>
-              <%= button_to "Profile", root_path, class: "dropdown-item" %>
-              <%= button_to "Payment", root_path, class: "dropdown-item" %>
-              <%= button_to "Settings", root_path, class: "dropdown-item" %>
+              <%= link_to "Dashboard", root_path, class: "dropdown-item" %>
+              <%= link_to "Profile", root_path, class: "dropdown-item" %>
+              <%= link_to "Payment", root_path, class: "dropdown-item" %>
+              <%= link_to "Settings", root_path, class: "dropdown-item" %>
 
               <div class="dropdown-divider"></div>
               <div class="dropdown-header">Staff</div>
               <%= link_to "Admin", admin_root_path, class: "dropdown-item" %>
               <%= link_to "Github", "https://github.com/mattgaudio/mythic-rails", class: "dropdown-item", target: "_blank" %>
-              <%= button_to "Pay", root_path, class: "dropdown-item" %>
-              <%= button_to "Slack", root_path, class: "dropdown-item" %>
-              <%= button_to "Time Sheet", root_path, class: "dropdown-item" %>
+              <%= link_to "Pay", root_path, class: "dropdown-item" %>
+              <%= link_to "Slack", root_path, class: "dropdown-item" %>
+              <%= link_to "Time Sheet", root_path, class: "dropdown-item" %>
 
               <div class="dropdown-divider"></div>
               <div class="dropdown-header">Session</div>
-              <%= button_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
+              <%= link_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
             </div>
           </div>
 
