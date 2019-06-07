@@ -30,7 +30,6 @@ gem 'clearance'
 gem 'administrate'
 
 ## Front End
-gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 
