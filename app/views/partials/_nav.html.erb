@@ -87,29 +87,42 @@
   </ul>
   <ul class="nav-right">
     <% if signed_in? %>
-      <%= link_to current_user.email, root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
+      <div>
+        <%= link_to "Comms", root_path, class: "nav-link", id: "drop-comms", role: "button", 'data-toggle': "dropdown" %>
+        <div class="dropdown-menu" aria-labelledby="drop-comms">
+          <div class="dropdown-header">Communications</div>
+          <%= button_to "Discord", root_path, class: "dropdown-item" %>
+          <%= button_to "History", root_path, class: "dropdown-item" %>
+        </div>
+      </div>
+      <div>
+        <%= link_to current_user.email, root_path, class: "nav-link", id: "drop-4", role: "button", 'data-toggle': "dropdown" %>
+        <div class="dropdown-menu" aria-labelledby="drop-4">
+          <div class="dropdown-header">Account</div>
+          <%= button_to "Dashboard", root_path, class: "dropdown-item" %>
+          <%= button_to "Profile", root_path, class: "dropdown-item" %>
+          <%= button_to "Payment", root_path, class: "dropdown-item" %>
+          <%= button_to "Settings", root_path, class: "dropdown-item" %>
+
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">Staff</div>
+          <%= link_to "Admin", admin_root_path, class: "dropdown-item" %>
+          <%= link_to "Github", "https://github.com/mattgaudio/mythic-rails", class: "dropdown-item", target: "_blank" %>
+          <%= button_to "Pay", root_path, class: "dropdown-item" %>
+          <%= button_to "Slack", root_path, class: "dropdown-item" %>
+          <%= button_to "Time Sheet", root_path, class: "dropdown-item" %>
+
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">Session</div>
+          <%= button_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
+        </div>
+      </div>
+
     <% else %>
       <%= link_to "Log in | Sign up", sign_in_path, class: "nav-link", 'data-toggle': "modal", 'data-target': "#exampleModalCenter" %>
     <% end %>
-    <div class="dropdown-menu" aria-labelledby="drop-4">
-      <div class="dropdown-header">Account</div>
-      <%= button_to "Dashboard", root_path, class: "dropdown-item" %>
-      <%= button_to "Profile", root_path, class: "dropdown-item" %>
-      <%= button_to "Payment", root_path, class: "dropdown-item" %>
-      <%= button_to "Settings", root_path, class: "dropdown-item" %>
 
-      <div class="dropdown-divider"></div>
-      <div class="dropdown-header">Staff</div>
-      <%= link_to "Admin", admin_root_path, class: "dropdown-item" %>
-      <%= link_to "Github", "https://github.com/mattgaudio/mythic-rails", class: "dropdown-item" %>
-      <%= button_to "Pay", root_path, class: "dropdown-item" %>
-      <%= button_to "Slack", root_path, class: "dropdown-item" %>
-      <%= button_to "Time Sheet", root_path, class: "dropdown-item" %>
 
-      <div class="dropdown-divider"></div>
-      <div class="dropdown-header">Session</div>
-      <%= button_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
-    </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
