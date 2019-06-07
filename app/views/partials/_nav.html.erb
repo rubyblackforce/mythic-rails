@@ -17,28 +17,28 @@
           <div class="dropdown-menu" aria-labelledby="drop-2">
             <div class="row mid-games-row">
               <div class="col-3">
-                <div class="dropdown-header">FPS Games</div>
+                <div class="dropdown-header fps-header">FPS Games</div>
                 <div class="dropdown-divider"></div>
                 <% @games.fps.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
-                <div class="dropdown-header">MOBA Games</div>
+                <div class="dropdown-header moba-header">MOBA Games</div>
                 <div class="dropdown-divider"></div>
                 <% @games.moba.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
-                <div class="dropdown-header">HERO Games</div>
+                <div class="dropdown-header hero-header">HERO Games</div>
                 <div class="dropdown-divider"></div>
                 <% @games.hero.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
-                <div class="dropdown-header">MORE Games</div>
+                <div class="dropdown-header more-header">MORE Games</div>
                 <div class="dropdown-divider"></div>
                 <% @games.more.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
