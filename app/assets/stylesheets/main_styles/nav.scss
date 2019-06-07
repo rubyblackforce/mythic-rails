@@ -94,7 +94,26 @@ form.button_to {
   color: white;
 }
 
-@media (min-width: 768px !important) {
+@include media-breakpoint-down(md) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav.nav {
+    height: auto;
+  }
+  .nav-left,
+  .nav-mid,
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+}
+@include media-breakpoint-down(lg) {
   .navbar-collapse {
     display: flex;
     flex-direction: column;
