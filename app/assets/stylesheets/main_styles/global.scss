@@ -2,11 +2,18 @@
 
 body {
   font-family: "Lato", sans-serif;
+  max-width: 1920px;
+  width: 100%;
 }
 
 html {
   overflow: scroll;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
 }
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */

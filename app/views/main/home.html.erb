@@ -3,12 +3,6 @@
     <div class="col-lg-3 col-md-6 left-hero-col">
       <div class="card-1">
         <div class="card-body">
-          <!-- <h5 class="card-title">Pick your Region:</h5>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>America</option>
-            <option>Europe</option>
-            <option>Asia</option>
-          </select> -->
           <div class="accordion-left-hero" id="accordionExample">
             <div class="accordion-header">
               Start Times:
@@ -75,7 +69,7 @@
                   <div class="card-body">
                     <ul class="list-group list-group-flush" id="list-group-hero">
                       <li class="list-group-item">
-                        <%= "Regular Tournament" %>
+                        <%= "Halo: MCC | 4v4" %>
                       </li>
                     </ul>
                   </div>
@@ -94,9 +88,8 @@
                     <ul class="list-group list-group-flush" id="list-group-hero">
                       <li class="list-group-item">
                         <%= link_to(info_tournament_basics_path, class: "dropdown-item") do %>
-                          Tournament: Halo: MCC | 4v4
-                          <br>
-                          Start: <%= Time.now.strftime("%d")%>,
+                          Halo: MCC | 4v4
+
                         <% end %>
                       </li>
                     </ul>
@@ -116,9 +109,10 @@
                     <ul class="list-group list-group-flush" id="list-group-hero">
                       <li class="list-group-item">
                         <%= link_to(info_tournament_basics_path, class: "dropdown-item") do %>
-                          Tournament: Halo: MCC | 4v4
+                          Halo: MCC | 4v4
                           <br>
-                          Start: <%= Time.now.strftime("%d")%>,
+                          <%= Random.new.rand.round == 1 ? "Regular" : "Late" %>
+                          <%= Time.now.strftime("%A")%>
                         <% end %>
                       </li>
                       <li class="list-group-item">
@@ -255,5 +249,9 @@
 </div>
 
 <div class="container-fluid main-games">
+
+</div>
+
+<div class="container-fluid main-basics">
 
 </div>
