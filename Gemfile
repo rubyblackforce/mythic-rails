@@ -29,6 +29,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'clearance'
 gem 'administrate'
 
+# OmniAuth
+gem 'omniauth'
+gem 'omniauth-google'
+gem 'omniauth-facebook'
+gem 'omniauth-twitch'
+gem 'omniauth-discord'
+
+
 ## front end
 gem 'font-awesome-sass'
 

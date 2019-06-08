@@ -14,7 +14,7 @@ nav.nav {
     text-decoration: none;
     &:hover {
       color: #fff;
-      background-color: #4d4d4d;
+      background-color: rgba(#fff, 0.25);
     }
   }
 }
@@ -35,9 +35,9 @@ nav.nav {
   width: 50%;
   text-align: center;
 }
+
 .mid-games-row {
   flex-wrap: nowrap;
-  padding: 2vh 2vw;
 }
 
 .nav-right {
@@ -111,6 +111,7 @@ form.button_to {
 
 .nav .dropdown-menu {
   background-color: #e6e6e6;
+  padding: 0.5em 0.5em;
 }
 
 .nav .dropdown-menu a.dropdown-item {

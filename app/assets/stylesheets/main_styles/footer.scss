@@ -17,6 +17,8 @@
   text-align: left;
   width: 85% !important;
   color: #fff;
+  padding-left: 0.25em;
+  margin: 0.5em 0;
 }
 
 .footer-body {
@@ -30,14 +32,34 @@
       display: block;
       padding: 10px 15px 10px 0;
       color: #d2d2d2;
+      padding-left: 0.25em;
       &:hover {
         color: #fff;
-        background-color: rgba(#000, 0.5);
+        background-color: rgba(#fff, 0.25);
         border-radius: 10px;
         text-decoration: none;
       }
     }
   }
+}
+
+.footer-game-row {
+}
+
+.footer-fps-header {
+  color: #6600ff;
+}
+
+.footer-moba-header {
+  color: #ff8533;
+}
+
+.footer-hero-header {
+  color: #0066cc;
+}
+
+.footer-more-header {
+  color: #00b386;
 }
 
 .power-social-row {
