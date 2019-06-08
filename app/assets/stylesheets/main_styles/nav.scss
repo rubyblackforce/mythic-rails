@@ -5,7 +5,7 @@ nav.nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: #1b2126;
   a,
   .nav-bar-nav .nav-link {
     color: #fff;
@@ -70,6 +70,10 @@ nav.nav {
 form.button_to {
   margin: 0;
   padding: 0;
+}
+
+.games-group .dropdown-header {
+  margin: 0.5em 0;
 }
 
 .dropdown-header.fps-header {
