@@ -75,9 +75,10 @@
         <div class="btn-group dropdown">
           <%= link_to "Information", root_path, class: "nav-link", id: "drop-5", role: "button", 'data-toggle': "dropdown" %>
           <div class="dropdown-menu" aria-labelledby="drop-5">
+            <div class="dropdown-header">Info</div>
             <%= link_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
             <%= link_to "Statistics", info_statistics_path, method: :get, class: "dropdown-item" %>
-            <%= link_to "Reddit", "https://www.reddit.com/r/mythicgaming", method: :get, class: "dropdown-item", target: '_blank' %>
+            <%= link_to "Reddit", "https://www.reddit.com/r/MythicGaming/", method: :get, class: "dropdown-item", target: '_blank' %>
             <%= link_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
             <%= link_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
             <div class="dropdown-divider"></div>

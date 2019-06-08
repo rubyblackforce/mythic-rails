@@ -18,9 +18,10 @@
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                   <ul class="list-group list-group-flush" id="list-group-hero">
-                    <li class="list-group-item">Regular Start Time:
+                    <li class="list-group-item">
+                      Regular Start Time: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
                       <br>
-                      <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
+                      Your Time: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
                     </li>
                     <li class="list-group-item">Regular Check-in Time:
                       <br>
