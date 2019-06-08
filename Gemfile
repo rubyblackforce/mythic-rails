@@ -29,8 +29,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'clearance'
 gem 'administrate'
 
-## Front End
-gem 'font-awesome-rails'
+## front end
+gem 'font-awesome-sass'
+
+
 
 
 

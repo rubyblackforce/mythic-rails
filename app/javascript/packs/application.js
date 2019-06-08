@@ -20,15 +20,11 @@ require("jquery");
 // Particles.js https://github.com/VincentGarreau/particles.js/
 //
 
-import "bootstrap";
+import "bootstrap/dist/js/bootstrap";
 
 document.addEventListener("turbolink:load", () => {
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
 });
 
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
-
-library.add(faCheck);
 dom.watch();
