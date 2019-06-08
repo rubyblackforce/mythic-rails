@@ -26,7 +26,8 @@
   li {
     text-align: left;
     a {
-      padding: 10px 15px;
+      display: block;
+      padding: 10px 15px 10px 0;
       color: #d2d2d2;
       &:hover {
         color: #fff;
