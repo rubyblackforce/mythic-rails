@@ -78,7 +78,7 @@
             <div class="dropdown-header">Info</div>
             <%= link_to "Tournament Basics",  info_tournament_basics_path, method: :get, class: "dropdown-item" %>
             <%= link_to "Statistics", info_statistics_path, method: :get, class: "dropdown-item" %>
-            <%= link_to "Reddit", "https://www.reddit.com/r/MythicGaming/", method: :get, class: "dropdown-item", target: '_blank' %>
+            <%= link_to "Reddit", "https://www.reddit.com/r/MythicGaming/", class: "dropdown-item", target: '_blank' %>
             <%= link_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
             <%= link_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
             <div class="dropdown-divider"></div>
@@ -98,6 +98,8 @@
             <div class="dropdown-menu" aria-labelledby="drop-comms">
               <div class="dropdown-header">Communications</div>
               <%= link_to "Discord", root_path, class: "dropdown-item" %>
+              <%= link_to "Invites", root_path, class: 'dropdown-item' %>
+              <%= link_to "Team Chat", root_path, class: 'dropdown-item' %>
               <%= link_to "History", root_path, class: "dropdown-item" %>
             </div>
           </div>

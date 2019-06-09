@@ -121,7 +121,7 @@ form.button_to {
   border-radius: 10px;
   &:hover {
     color: #000;
-    background-color: #d2d2d2;
+    background-color: rgba(#000, 0.25);
   }
 }
 

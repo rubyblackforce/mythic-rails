@@ -19,13 +19,14 @@
                 <div class="card-body">
                   <ul class="list-group list-group-flush" id="list-group-hero">
                     <li class="list-group-item">
-                      Regular Start Time: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
+                      Start: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
                       <br>
                       Your Time: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
                     </li>
-                    <li class="list-group-item">Regular Check-in Time:
-                      <br>
+                    <li class="list-group-item">Check-in:
                       <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
+                      <br>
+                      Your time: <%= Time.now.strftime("%H:%M; %m-%d-%Y") %>
                     </li>
                   </ul>
                 </div>
@@ -167,7 +168,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <%= image_tag "h3img3.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <%= image_tag "h3img7.jpg", class: "d-block w-100 img-responsive", alt: "" %>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -188,7 +189,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <%= image_tag "h3img6.jpg", class: "d-block w-100 img-responsive", alt: "" %>
+              <%= image_tag "h3img23.jpg", class: "d-block w-100 img-responsive", alt: "" %>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -219,16 +220,6 @@
 
 <script>
   $(document).ready(function() {
-    $('#carousel-hero').carousel({
-      interval: false,
-      ride: false,
-      wrap: false
-    });
-    $('.carousel-wrapper').carousel({
-      interval: false,
-      ride: false,
-      wrap: false
-    });
     $('.carousel').carousel({
       interval: false,
       ride: false,

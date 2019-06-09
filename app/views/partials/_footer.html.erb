@@ -1,64 +1,5 @@
 <div class="footer-section">
 	<div class="container-fluid footer-container">
-		<!-- <div class="row footer-game-row">
-			<div class="col-3">
-				<div class="footer-header footer-fps-header">
-					FPS Games:
-				</div>
-				<div class="footer-body">
-					<ul>
-						<% @games.fps.each do |x| %>
-							<li><%= link_to "#{x.long_title}", root_path %></li>
-						<% end %>
-					</ul>
-				</div>
-
-
-			</div>
-			<div class="col-3">
-				<div class="footer-header footer-moba-header">
-					MOBA Games:
-				</div>
-				<div class="footer-body">
-					<ul>
-						<% @games.moba.each do |x| %>
-							<li><%= link_to "#{x.long_title}", root_path %></li>
-						<% end %>
-					</ul>
-				</div>
-
-
-			</div>
-			<div class="col-3">
-				<div class="footer-header footer-hero-header">
-					HERO Games:
-				</div>
-				<div class="footer-body">
-					<ul>
-						<% @games.hero.each do |x| %>
-							<li><%= link_to "#{x.long_title}", root_path %></li>
-						<% end %>
-					</ul>
-				</div>
-
-
-			</div>
-			<div class="col-3">
-				<div class="footer-header footer-more-header">
-					MORE Games:
-				</div>
-				<div class="footer-body">
-					<ul>
-						<% @games.more.each do |x| %>
-							<li><%= link_to "#{x.long_title}", root_path %></li>
-						<% end %>
-					</ul>
-				</div>
-
-
-			</div>
-		</div> -->
-
 		<div class="row">
 			<div class="col-3">
 				<div class="footer-header">
@@ -180,58 +121,68 @@
 				<div class="footer-body">
 					<div class="row">
 						<div class="col-2 offset-1">
-							<i class="fab fa-linux fa-3x"></i>
+							<i class="fab fa-linux fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-html5 fa-3x"></i>
+							<i class="fab fa-html5 fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-css3 fa-3x"></i>
+							<i class="fab fa-css3 fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-sass fa-3x"></i>
+							<i class="fab fa-sass fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-bootstrap fa-3x"></i>
+							<i class="fab fa-bootstrap fa-2x"></i>
 
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2 offset-1">
+							<i class="fab fa-yarn fa-2x"></i>
+
+
+						</div>
+						<div class="col-2">
+							<i class="fab fa-react fa-2x"></i>
+
+
+						</div>
+						<div class="col-2">
+							<i class="far fa-gem fa-2x"></i>
+
+
+						</div>
+						<div class="col-2">
 							<%= image_tag "rails.svg.png", height: "25", width: "25" %>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-digital-ocean fa-3x"></i>
+							<i class="fab fa-digital-ocean fa-2x"></i>
 
-						</div>
-						<div class="col-2">
-							<i class="fab fa-yarn fa-3x"></i>
-						</div>
-						<div class="col-2">
-							<i class="far fa-gem fa-3x"></i>
-						</div>
-						<div class="col-2">
-							<i class="fab fa-stripe fa-3x"></i>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2 offset-1">
-							<i class="fab fa-pied-piper-alt fa-3x"></i>
-						</div>
-						<div class="col-2">
-							<i class="fab fa-discord fa-3x"></i>
+							<i class="fab fa-stripe fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-react fa-3x"></i>
+							<i class="fab fa-discord fa-2x"></i>
 
 						</div>
-						<div class="col-2"></div>
+						<div class="col-2">
+							<i class="fab fa-pied-piper-alt fa-2x"></i>
+
+
+						</div>
+						<div class="col-2">
+
+						</div>
 						<div class="col-2"></div>
 					</div>
 
@@ -244,37 +195,43 @@
 				<div class="footer-body">
 					<div class="row">
 						<div class="col-2 offset-1">
-							<i class="fab fa-github fa-3x"></i>
+							<%= link_to("https://github.com/mattgaudio/mythic-rails", class: "", target: "_blank") do %>
+								<i class="fab fa-github fa-2x"></i>
+							<% end %>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-reddit fa-3x"></i>
+							<%= link_to("https://www.reddit.com/r/MythicGaming/", class: "", target: "_blank") do %>
+								<i class="fab fa-reddit fa-2x"></i>
+							<% end %>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-twitch fa-3x"></i>
+							<i class="fab fa-twitch fa-2x"></i>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-linkedin fa-3x"></i>
+							<i class="fab fa-linkedin fa-2x"></i>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-instagram fa-3x"></i>
+							<i class="fab fa-instagram fa-2x"></i>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-2 offset-1">
-							<i class="fab fa-facebook-square fa-3x"></i>
+							<i class="fab fa-facebook-square fa-2x"></i>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-youtube fa-3x"></i>
+							<i class="fab fa-youtube fa-2x"></i>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-twitter fa-3x"></i>
+							<i class="fab fa-twitter fa-2x"></i>
 						</div>
 						<div class="col-2">
-							<i class="fab fa-discord fa-3x"></i>
+							<i class="fab fa-discord fa-2x"></i>
 
 						</div>
 						<div class="col-2">
-							<i class="fab fa-angellist fa-3x"></i>
+							<%= link_to("https://angel.co/company/mythic-gaming-entertainment", class: "", target: "_blank") do %>
+								<i class="fab fa-angellist fa-2x"></i>
+							<% end %>
 						</div>
 					</div>
 				</div>
