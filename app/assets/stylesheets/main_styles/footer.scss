@@ -11,6 +11,10 @@
   max-width: 65vw;
 }
 
+.footer-section .row {
+  margin: 1rem auto;
+}
+
 .footer-header {
   font-size: 0.9em;
   padding-top: 1vh;
@@ -45,10 +49,6 @@
     }
   }
 }
-
-.footer-game-row {
-}
-
 .footer-fps-header {
   color: #6600ff;
 }

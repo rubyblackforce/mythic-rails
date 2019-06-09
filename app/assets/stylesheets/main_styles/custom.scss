@@ -1,0 +1,20 @@
+.box {
+  width: 94vw;
+  margin: 2.5rem auto;
+  background-color: #1b2126;
+  min-height: 50vh;
+}
+
+.box-header {
+  background-color: #1b2126;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-header .header-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
