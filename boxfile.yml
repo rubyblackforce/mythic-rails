@@ -1,0 +1,24 @@
+run.config:
+  engine: ruby
+
+  extra_packages:
+    - nodejs
+    - pkgconf
+    - libxml2
+    - libxslt
+
+  extra_steps:
+    - yarn
+
+  cache_dirs:
+    - node_modules
+
+deploy.config:
+  before_live:
+    web.main:
+      - rake db:setup_or_migrate
+  extra_steps:
+    - rake assets:precompile RAILS_ENV=production
+
+data.db:
+  image: nanobox/postgresql:9.5

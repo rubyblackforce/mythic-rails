@@ -1,0 +1,15 @@
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/mythic/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/matthewgaudio/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/matthewgaudio/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190609-64974-mkdcz.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/mythic/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/mythic/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/matthewgaudio/Desktop/dev/ruby/projects/mythic/vendor/bundle/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190609-64974-1pke075/skiptrace
