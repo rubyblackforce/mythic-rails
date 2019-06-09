@@ -216,6 +216,21 @@ select.form-control {
   width: 20rem;
 }
 
+.media-log-in {
+  display: flex;
+  flex-direction: column;
+  .media-log-in-link {
+    width: 20rem;
+    background-color: rgba(#fff, 0.15);
+    padding: 0.25rem;
+    margin: 0.75rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 a.main-profile-link {
   padding: 1.5rem 2.5rem;
   color: #fff;

@@ -273,7 +273,7 @@
           </div>
         </div>
           <div class="submit-field">
-            <%= form.submit "Submit", class: "btn btn-primary" %>
+            <%= form.submit "Log in", class: "btn btn-primary" %>
           </div>
 
           <div class="other-links">
@@ -282,6 +282,23 @@
             <% end %>
             <%= link_to t(".forgot_password"), new_password_path %>
           </div>
+        <div class="form-group">
+          -- OR -- 
+          <div class="media-log-in">
+            <%= link_to(root_path, class: "media-log-in-link") do %>
+              <i class="fab fa-google fa-2x"></i>
+            <% end %>
+            <%= link_to(root_path, class: "media-log-in-link") do %>
+              <i class="fab fa-facebook fa-2x"></i>
+            <% end %>
+            <%= link_to(root_path, class: "media-log-in-link") do %>
+              <i class="fab fa-discord fa-2x"></i>
+            <% end %>
+            <%= link_to(root_path, class: "media-log-in-link") do %>
+              <i class="fab fa-twitch fa-2x"></i>
+            <% end %>
+          </div>
+        </div>
         <% end %>
       </div>
       <div class="col-6">
