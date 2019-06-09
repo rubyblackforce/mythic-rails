@@ -201,6 +201,30 @@ select.form-control {
 .main-profile-header {
 }
 .main-profile-body {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-form-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-profile-body .form-group .text-field,
+.main-profile-body .form-group .password-field {
+  width: 20rem;
+}
+
+a.main-profile-link {
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(#fff, 0.25);
+  }
 }
 
 // .main-games

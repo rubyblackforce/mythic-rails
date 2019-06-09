@@ -18,28 +18,24 @@
             <div class="row mid-games-row">
               <div class="col-3">
                 <div class="dropdown-header fps-header">FPS Games</div>
-                <div class="dropdown-divider"></div>
                 <% @games.fps.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
                 <div class="dropdown-header moba-header">MOBA Games</div>
-                <div class="dropdown-divider"></div>
                 <% @games.moba.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
                 <div class="dropdown-header hero-header">HERO Games</div>
-                <div class="dropdown-divider"></div>
                 <% @games.hero.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
               </div>
               <div class="col-3">
                 <div class="dropdown-header more-header">MORE Games</div>
-                <div class="dropdown-divider"></div>
                 <% @games.more.each do |game| %>
                     <%= link_to game.short_title, root_path, class: "dropdown-item" %>
                 <% end %>
@@ -52,10 +48,8 @@
           <div class="dropdown-menu" aria-labelledby="drop-3">
             <div class="dropdown-header">Regular</div>
             <%= link_to "Reddit", root_path, class: "dropdown-item" %>
-            <div class="dropdown-divder"></div>
             <div class="dropdown-header">Late</div>
             <%= link_to "Reddit", root_path, class: "dropdown-item" %>
-            <div class="dropdown-divider"></div>
             <div class="dropdown-header">Future</div>
             <%= link_to "Reddit", root_path, class: "dropdown-item" %>
             <%= link_to "Reddit", root_path, class: "dropdown-item" %>
@@ -81,7 +75,6 @@
             <%= link_to "Reddit", "https://www.reddit.com/r/MythicGaming/", class: "dropdown-item", target: '_blank' %>
             <%= link_to "Support", info_support_path, method: :get, class: "dropdown-item" %>
             <%= link_to "FAQ", info_faq_path, method: :get, class: "dropdown-item" %>
-            <div class="dropdown-divider"></div>
             <div class="dropdown-header">More</div>
             <%= link_to "Mythic Studios", root_path, class: "dropdown-item" %>
             <%= link_to "Mythic Console", root_path, class: "dropdown-item" %>
@@ -112,7 +105,6 @@
               <%= link_to "Payment", root_path, class: "dropdown-item" %>
               <%= link_to "Settings", root_path, class: "dropdown-item" %>
 
-              <div class="dropdown-divider"></div>
               <div class="dropdown-header">Staff</div>
               <%= link_to "Admin", admin_root_path, class: "dropdown-item" %>
               <%= link_to "Github", "https://github.com/mattgaudio/mythic-rails", class: "dropdown-item", target: "_blank" %>
@@ -120,7 +112,6 @@
               <%= link_to "Slack", root_path, class: "dropdown-item" %>
               <%= link_to "Time Sheet", root_path, class: "dropdown-item" %>
 
-              <div class="dropdown-divider"></div>
               <div class="dropdown-header">Session</div>
               <%= link_to "Log out", sign_out_path, method: :delete, class: "dropdown-item" %>
             </div>
