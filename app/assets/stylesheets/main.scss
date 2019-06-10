@@ -298,6 +298,15 @@ a.main-profile-link {
 }
 
 .join-tourn-header {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  a {
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+  }
   &:hover {
     background-color: rgba(#fff, 0.25);
   }

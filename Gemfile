@@ -31,6 +31,7 @@ gem 'administrate'
 gem 'administrate-field-active_storage'
 gem 'figaro'
 gem 'aws-sdk-s3', require: false
+gem 'seed_dump'
 
 # OmniAuth
 gem 'omniauth'
