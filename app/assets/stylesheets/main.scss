@@ -306,8 +306,10 @@ a.main-profile-link {
 .main-games-content {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding: 2rem 0;
   background-color: #1b2126;
+  min-height: 60vh;
 }
 
 .main-games-col {
@@ -338,7 +340,7 @@ a.main-profile-link {
 }
 
 .main-games-boundary {
-  padding: 2.5rem;
+  padding: 1.5rem 0;
 }
 
 .main-games-divider {
