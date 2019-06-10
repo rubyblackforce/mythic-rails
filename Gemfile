@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 ## Custom
 gem 'clearance'
 gem 'administrate'
+gem 'administrate-field-active_storage'
+gem 'figaro'
+gem 'aws-sdk-s3', require: false
 
 # OmniAuth
 gem 'omniauth'

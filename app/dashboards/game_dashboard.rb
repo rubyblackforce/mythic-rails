@@ -15,6 +15,7 @@ class GameDashboard < Administrate::BaseDashboard
     game_group: Field::String,
     year: Field::Number,
     misc: Field::String,
+    game_image: Field::ActiveStorage,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -27,8 +28,7 @@ class GameDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :long_title,
-    :short_title,
-    :game_type,
+    :game_image,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -41,6 +41,7 @@ class GameDashboard < Administrate::BaseDashboard
     :game_group,
     :year,
     :misc,
+    :game_image,
     :created_at,
     :updated_at,
   ].freeze
@@ -55,6 +56,7 @@ class GameDashboard < Administrate::BaseDashboard
     :game_group,
     :year,
     :misc,
+    :game_image,
   ].freeze
 
   # Overwrite this method to customize how games are displayed

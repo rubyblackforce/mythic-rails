@@ -376,7 +376,7 @@
 </div>
 
 <div class="container-fluid main-games box">
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-1 box-header">
       <div class="header-title">
         <i class="fa fa-check-circle fa-2x"></i>
@@ -388,27 +388,31 @@
       </div>
     </div>
     <div class="col-4 box-header">
-      <div class="header-title">
-        FPS Games
-
+      <div class="main-games-header fps-games-header">
+        <div class="header-title">
+          FPS Games
+        </div>
       </div>
     </div>
     <div class="col-6 box-header">
-      <div class="header-title">
+      <div class="header-title main-games-header join-tourn-header">
         Join a Tournament
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="box-content">
-
+  <div class="row box-content main-games-content no-gutters">
+    <% @games.fps.each do |x| %>
+    <div class="col-3 main-games-col">
+      <div class="main-games-boundary">
+        <% if x.game_image.attached? %>
+          <%= link_to(image_tag x.game_image, class: "fps-game-img") %>
+        <% end %>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="box-divider"></div>
+    <% end %>
   </div>
 
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-1 box-header">
       <div class="header-title">
         <i class="fa fa-check-circle fa-2x"></i>
@@ -420,27 +424,57 @@
       </div>
     </div>
     <div class="col-4 box-header">
-      <div class="header-title">
-        MOBA Games
-
+      <div class="main-games-header moba-games-header">
+        <div class="header-title">
+          MOBA Games
+        </div>
       </div>
     </div>
     <div class="col-6 box-header">
-      <div class="header-title">
+      <div class="header-title main-games-header join-tourn-header">
         Join a Tournament
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="box-content">
+  <div class="row box-content main-games-content no-gutters">
+    <% @games.moba.each do |x| %>
+    <div class="col-3 main-games-col">
+      <div class="main-games-boundary">
+        <% if x.game_image.attached? %>
+          <%= link_to(image_tag x.game_image, class: "moba-game-img") %>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
+  </div>
 
+  <div class="row no-gutters">
+    <div class="col-6 box-header">
+      <div class="main-games-header hero-games-header">
+        <div class="header-title">
+          HERO Games
+        </div>
+      </div>
+    </div>
+    <div class="col-6 box-header">
+      <div class="header-title main-games-header join-tourn-header">
+        Join a Tournament
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="box-divider"></div>
+  <div class="row box-content main-games-content no-gutters">
+    <% @games.hero.each do |x| %>
+    <div class="col-3 main-games-col">
+      <div class="main-games-boundary">
+        <% if x.game_image.attached? %>
+          <%= link_to(image_tag x.game_image, class: "hero-game-img") %>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
   </div>
 
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-1 box-header">
       <div class="header-title">
         <i class="fa fa-check-circle fa-2x"></i>
@@ -452,56 +486,28 @@
       </div>
     </div>
     <div class="col-4 box-header">
-      <div class="header-title">
-        HERO Games
-
+      <div class="main-games-header more-games-header">
+        <div class="header-title">
+          MORE Games
+        </div>
       </div>
     </div>
     <div class="col-6 box-header">
-      <div class="header-title">
+      <div class="header-title main-games-header join-tourn-header">
         Join a Tournament
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="box-content">
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="box-divider"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-1 box-header">
-      <div class="header-title">
-        <i class="fa fa-check-circle fa-2x"></i>
+  <div class="row box-content main-games-content no-gutters">
+    <% @games.more.each do |x| %>
+    <div class="col-3 main-games-col">
+      <div class="main-games-boundary">
+        <% if x.game_image.attached? %>
+          <%= link_to(image_tag x.game_image, class: "more-game-img") %>
+        <% end %>
       </div>
     </div>
-    <div class="col-1 box-header">
-      <div class="header-title">
-        <i class="fas fa-adjust fa-2x"></i>
-      </div>
-    </div>
-    <div class="col-4 box-header">
-      <div class="header-title">
-        MORE Games
-
-      </div>
-    </div>
-    <div class="col-6 box-header">
-      <div class="header-title">
-        Join a Tournament
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="box-content">
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="box-divider"></div>
+    <% end %>
   </div>
 
 </div>
