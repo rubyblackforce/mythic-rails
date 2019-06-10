@@ -276,6 +276,10 @@ a.main-profile-link {
   color: #fff;
 }
 
+.main-games-row {
+  padding-top: 2.5rem;
+}
+
 .main-games-header {
   display: flex;
   justify-content: center;
@@ -306,6 +310,9 @@ a.main-profile-link {
     text-decoration: none;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &:hover {
     background-color: rgba(#fff, 0.25);
