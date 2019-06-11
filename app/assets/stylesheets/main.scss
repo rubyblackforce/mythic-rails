@@ -38,7 +38,7 @@ select.form-control {
   background-color: rgba(#000, 0.5);
   color: #fff;
   border-radius: 5px;
-  flex: 1;
+  flex-grow: 1 0;
 }
 
 .card {
@@ -400,4 +400,19 @@ a.main-profile-link {
   background-image: url("sky2.jpg");
   background-position: center center;
   background-size: 100% 100%;
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+  .main-games-col {
+    img {
+      height: 12rem;
+      width: 16rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
 }

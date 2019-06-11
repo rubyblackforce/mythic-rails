@@ -323,12 +323,12 @@
         <!-- ["angellist", "discord", "facebook", "github", "instagram", "linkedin", "reddit", "twitch", "twitter", "youtube"] -->
         <div class="row">
           <div class="col-2 offset-2">
-            <%= link_to(root_path, class: "main-profile-link") do %>
+            <%= link_to("https://angel.co/company/mythic-gaming-entertainment", class: "main-profile-link", target: "_blank") do %>
               <i class="fab fa-angellist fa-2x"></i>
             <% end %>
           </div>
           <div class="col-2">
-            <%= link_to(root_path, class: "main-profile-link") do %>
+            <%= link_to("https://discord.gg/dmMaB2w", class: "main-profile-link", target: "_blank") do %>
               <i class="fab fa-discord fa-2x"></i>
             <% end %>
           </div>
@@ -338,7 +338,7 @@
             <% end %>
           </div>
           <div class="col-2">
-            <%= link_to(root_path, class: "main-profile-link") do %>
+            <%= link_to("https://github.com/mattgaudio/mythic-rails", class: "main-profile-link", target: "_blank") do %>
               <i class="fab fa-github fa-2x"></i>
             <% end %>
           </div>
@@ -355,7 +355,7 @@
             <% end %>
           </div>
           <div class="col-2">
-            <%= link_to(root_path, class: "main-profile-link") do %>
+            <%= link_to("https://www.reddit.com/r/MythicGaming/", class: "main-profile-link", target: "_blank") do %>
               <i class="fab fa-reddit fa-2x"></i>
             <% end %>
           </div>
@@ -391,7 +391,7 @@
 
 </div>
 
-<div class="container-fluid main-games box">
+<div class="container-fluid main-games box no-padding">
   <div class="row no-gutters main-games-row">
     <div class="col-6 box-header">
       <div class="main-games-header fps-games-header">
@@ -425,13 +425,13 @@
   </div>
   <div class="row box-content main-games-content no-gutters">
     <% @games.fps.each do |x| %>
-    <div class="col-3 main-games-col">
-      <div class="main-games-boundary">
-        <% if x.game_image.attached? %>
-          <%= link_to(image_tag x.game_image, class: "fps-game-img") %>
-        <% end %>
+      <div class="col-lg-3 col-md-4 col-sm-6 main-games-col">
+        <div class="main-games-boundary">
+          <% if x.game_image.attached? %>
+            <%= link_to(image_tag x.game_image, class: "fps-game-img") %>
+          <% end %>
+        </div>
       </div>
-    </div>
     <% end %>
   </div>
 
@@ -566,7 +566,7 @@
 
 </div>
 
-<div class="container-fluid main-basics box">
+<div class="container-fluid main-basics box no-padding">
   <div class="row no-gutters">
     <div class="col-12">
       <div class="box-header main-basics-header">

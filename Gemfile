@@ -25,28 +25,23 @@ gem 'jbuilder', '~> 2.5'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-## Custom
-gem 'clearance'
+## Custom:
 gem 'administrate'
 gem 'administrate-field-active_storage'
-gem 'figaro'
 gem 'aws-sdk-s3', require: false
+gem 'clearance'
+gem 'figaro'
 gem 'seed_dump'
 
-# OmniAuth
+## OmniAuth:
 gem 'omniauth'
 gem 'omniauth-google'
 gem 'omniauth-facebook'
 gem 'omniauth-twitch'
 gem 'omniauth-discord'
 
-
-## front end
+## Front-End:
 gem 'font-awesome-sass'
-
-
-
-
 
 
 # Reduces boot times through caching; required in config/boot.rb
