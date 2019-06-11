@@ -8,29 +8,44 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
+* [Ruby](https://www.ruby-lang.org/en/) - The programming language
+* [Ruby on Rails](https://rubyonrails.org/) - The web framework used
+* [RVM](https://rvm.io/) - The ruby version manager used to install Ruby-2.6.3
 
-```
-Give examples
-```
+The app comes with a number of Ruby Gems(libraries) installed including:
+Thoughbot/Clearance, Thoughtbot/Administrate and AWS-SDK-3
+
+Additionally you will need to be able to supply front-end assets:
+* [Yarn](https://yarnpkg.com/en/) - The front end asset tool used
+* [Node.js](https://nodejs.org/en/) - The front end scripting language used
+
+The repo comes with a number of front-end apps installed including: 
+SCSS, jQuery, Bootstrap 4 and Font Awesome 5
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+$ git clone https://github.com/mattgaudio/mythic-rails.git
 ```
-
-And repeat
-
+After a fresh clone please run these commands to get up and running with a Rails 6 app
 ```
-until finished
+$ cd mythic-rails 
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
+```
+$ bundle install 
+```
+```
+$ yarn 
+```
+To start the Server on Mac run:
+```
+$ rails s 
+```
+To start the server on Windows run:
+```
+$ rails s -p 3001 (or port number of your choice)
+```
 
 ## Running the tests
 
