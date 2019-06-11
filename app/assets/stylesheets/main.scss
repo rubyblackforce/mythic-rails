@@ -395,18 +395,33 @@ a.main-profile-link {
 .main-games-divider {
   background-color: #333 !important;
 }
+
 // .main-basics
 .main-basics {
-  background-image: url("background4.jpg");
+  background-image: url("sky2.jpg");
   background-position: center center;
   background-size: 100% 100%;
   color: #fff;
+  background: #1b2126;
 }
 
 .main-basics-header {
 }
 
 .main-basics-content {
+}
+
+.basics-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .nav.nav-pills a {
+    color: #339966;
+    &:hover {
+      color: #000;
+    }
+  }
 }
 
 .basics-header {
@@ -417,29 +432,34 @@ a.main-profile-link {
 }
 
 .basics-body {
-  background-color: rgba(#000, 0.5);
   margin: 1rem 0;
   padding: 1rem;
+  background-color: #d2d2d2;
+  border-radius: 8px;
   ul.basics-list {
     list-style-type: disc !important;
     li {
       display: list-item;
-      color: #d2d2d2;
+      color: #000;
       line-height: 2;
       margin-left: 1.5rem;
       &:hover {
-        color: #fff;
       }
     }
   }
 }
+
 .basics-links {
   padding: 1rem;
   margin-left: 1.5rem;
+  a {
+    padding: 0.75rem 1.5rem 0.75rem 0;
+  }
 }
 
 .basics-col {
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @include media-breakpoint-down(lg) {
