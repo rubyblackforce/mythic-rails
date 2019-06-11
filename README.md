@@ -72,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Matthew Gaudio** - *Lead Developer, Project Lead, Idea-Man* - [Matt-Gaud-Github](https://github.com/mattgaudio)
+* **Matthew Gaudio** - *Lead Developer, Project Lead* - [Matt-Gaud-Github](https://github.com/mattgaudio)
 * **Vamshi Danam** - *Lead Front-End Developer* - [Vamshi-Danam-Github](https://github.com/PurpleBooth)
 
 
