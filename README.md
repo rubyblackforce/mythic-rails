@@ -38,6 +38,11 @@ $ bundle install
 ```
 $ yarn 
 ```
+To create a local database and seed it
+```
+$ rails db:setup
+```
+
 To start the Server on Mac run:
 ```
 $ rails s 
@@ -46,6 +51,9 @@ To start the server on Windows run:
 ```
 $ rails s -p 3001 (or port number of your choice)
 ```
+Here is a Ruby on Rails Cheat Sheet:
+[Ruby on Rails 5 Cheat Sheet](https://gist.github.com/harrietty/92c5da9505b503e40a16ae52fed0c8ca)
+
 
 ## Running the tests
 
