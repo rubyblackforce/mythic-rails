@@ -287,6 +287,8 @@ a.main-profile-link {
   height: 100%;
   width: 100%;
 }
+.header-title {
+}
 
 .fps-games-header {
   background-color: #6600ff;
@@ -317,6 +319,30 @@ a.main-profile-link {
   }
   &:hover {
     background-color: rgba(#fff, 0.25);
+  }
+  i {
+    font-size: 2rem !important;
+  }
+}
+
+.quick-join-header {
+  height: 100%;
+  width: 100%;
+  .btn-group {
+    height: 100%;
+    width: 100%;
+    border-radius: none;
+    .btn {
+      background-color: transparent;
+      border: none transparent;
+      border-radius: none;
+      &:hover {
+        background-color: rgba(#fff, 0.25);
+      }
+    }
+  }
+  .dropdown-menu-right {
+    text-align: right;
   }
 }
 
