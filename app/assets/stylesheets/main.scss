@@ -200,6 +200,24 @@ select.form-control {
 .main-profile {
 }
 .main-profile-header {
+  .header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .log-in-header {
+      width: 10rem;
+      a {
+        text-decoration: none;
+      }
+    }
+    .sign-up-header {
+      width: 10rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
 .main-profile-body {
   color: #fff;
@@ -366,18 +384,6 @@ a.main-profile-link {
     border-radius: 5px;
     &:hover {
       border: 1rem solid rgba(#fff, 0.25);
-      // &.fps-game-img {
-      //   border: 1rem solid #6600ff;
-      // }
-      // &.moba-game-img {
-      //   border: 1rem solid #ff8533;
-      // }
-      // &.hero-game-img {
-      //   border: 1rem solid #0066cc;
-      // }
-      // &.more-game-img {
-      //   border: 1rem solid #00b386;
-      // }
     }
   }
 }
