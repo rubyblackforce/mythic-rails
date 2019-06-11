@@ -397,9 +397,49 @@ a.main-profile-link {
 }
 // .main-basics
 .main-basics {
-  background-image: url("sky2.jpg");
+  background-image: url("background4.jpg");
   background-position: center center;
   background-size: 100% 100%;
+  color: #fff;
+}
+
+.main-basics-header {
+}
+
+.main-basics-content {
+}
+
+.basics-header {
+  padding: 1rem;
+  border: 0.5rem solid rgba(#fff, 0.5);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.basics-body {
+  background-color: rgba(#000, 0.5);
+  margin: 1rem 0;
+  padding: 1rem;
+  ul.basics-list {
+    list-style-type: disc !important;
+    li {
+      display: list-item;
+      color: #d2d2d2;
+      line-height: 2;
+      margin-left: 1.5rem;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.basics-links {
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.basics-col {
+  margin: 2rem 0;
 }
 
 @include media-breakpoint-down(lg) {
