@@ -195,4 +195,7 @@ form.button_to {
 }
 
 @include media-breakpoint-down(md) {
+  nav.nav {
+    min-height: 3.5rem;
+  }
 }

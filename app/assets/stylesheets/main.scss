@@ -33,11 +33,12 @@ select.form-control {
 }
 
 .card-1 {
-  height: 60vh !important;
+  min-height: 60vh;
   width: 90% !important;
   background-color: rgba(#000, 0.5);
   color: #fff;
   border-radius: 5px;
+  flex: 1;
 }
 
 .card {
@@ -277,7 +278,6 @@ a.main-profile-link {
 }
 
 .main-games-row {
-  padding-top: 2.5rem;
 }
 
 .main-games-header {
@@ -305,6 +305,7 @@ a.main-profile-link {
   display: flex;
   justify-content: center;
   align-items: center !important;
+  background-color: #333;
   a {
     color: #fff;
     text-decoration: none;
@@ -366,5 +367,5 @@ a.main-profile-link {
 .main-basics {
   background-image: url("sky2.jpg");
   background-position: center center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
