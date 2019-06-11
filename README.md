@@ -1,6 +1,6 @@
 # Mythic Gaming
 
-A website dedicated to hosting competitive online video game tournaments. The production site can be viewed at mythicgaming.net
+A website dedicated to hosting competitive online video game tournaments. The production site can be viewed at [mythicgaming.net](https://www.mythicgaming.net) 
 
 ## Getting Started
 
