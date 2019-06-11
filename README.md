@@ -1,6 +1,6 @@
-# Project Title
+# Mythic Gaming
 
-One Paragraph of project description goes here
+A website dedicated to hosting competitive online video game tournaments. 
 
 ## Getting Started
 
@@ -58,9 +58,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Ruby on Rails](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [React.js](https://maven.apache.org/) - Dependency Management
+* [Digital Ocean](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
@@ -72,8 +72,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Matthew Gaudio** - *Lead Developer* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Vamshi Danam** - *Lead Front-End Developer* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Matthew Gaudio** - *Lead Developer, Project Lead* - [Matt-Gaud-Github](https://github.com/mattgaudio)
+* **Vamshi Danam** - *Lead Front-End Developer* - [Vamshi-Danam-Github](https://github.com/PurpleBooth)
 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
