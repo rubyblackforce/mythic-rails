@@ -81,9 +81,10 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Ruby on Rails](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [React.js](https://maven.apache.org/) - Dependency Management
-* [Digital Ocean](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Bootstrap](https://getbootstrap.com/) - The CSS framework used
+* [Ruby on Rails](https://rubyonrails.org/) - The web framework used
+* [React.js](https://reactjs.org/) - The front-end framework used
+* [Digital Ocean](https://www.digitalocean.com/) - The hosting platform
 
 ## Contributing
 
@@ -103,7 +104,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
