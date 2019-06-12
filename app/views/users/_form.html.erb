@@ -1,9 +1,11 @@
-<div class="text-field">
-  <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
+<div style="color: white" class="text-field form-group">
+  <br><br><br>
+  <p style="font-size: 2.5vh;"><%= form.label :email %></p>
+  <%= form.text_field :email, type: 'email',class: "form-control-lg",placeholder: "Enter the email address" %>
 </div>
 
-<div class="password-field">
-  <%= form.label :password %>
-  <%= form.password_field :password %>
+<div style="color: white" class="password-field form-group">
+  <br>
+  <p style="font-size: 2.5vh;"><%= form.label :password %></p>
+  <%= form.password_field :password,class:"form-control-lg",placeholder: "Enter the Password" %>
 </div>
