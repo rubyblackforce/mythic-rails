@@ -82,8 +82,8 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Bootstrap](https://getbootstrap.com/) - The CSS framework used
-* [Ruby on Rails](https://rubyonrails.org/) - The web framework used
 * [React.js](https://reactjs.org/) - The front-end framework used
+* [Ruby on Rails](https://rubyonrails.org/) - The web framework used
 * [Digital Ocean](https://www.digitalocean.com/) - The hosting platform
 
 ## Contributing
